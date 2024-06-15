@@ -1,0 +1,1374 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN,en,zh-TW,default">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="老白">
+    <meta name="description" content="个人博客的静态网页建站经验总结1.git1.1 官网安装https://git-scm.com/download。下载对应的64位版本
+1.2 git教程https://www.liaoxuefeng.com/wiki/8960434880">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>老白</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">老白</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/archives">
+          
+          <i class="fas fa-hourglass-half" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>时轴</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/categories">
+          
+          <i class="fas fa-bookmark" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>分类</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/tags">
+          
+          <i class="fas fa-tag" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>标签</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/pdf">
+          
+          <i class="fas fa-file-pdf" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>PDF</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/zhang-shicong.github.io/en" class="waves-effect waves-light">
+      
+      <span>English Site</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">老白</div>
+        <div class="logo-desc">
+            
+            老白个人用的知识整理博客
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-archive"></i>
+			
+			归档
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>
+
+                  <a href="/archives " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-hourglass-half" style="position: absolute;left:50px" ></i>
+			      
+		          <span>时轴</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/categories " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-bookmark" style="position: absolute;left:50px" ></i>
+			      
+		          <span>分类</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/tags " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-tag" style="position: absolute;left:50px" ></i>
+			      
+		          <span>标签</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/pdf " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-file-pdf" style="position: absolute;left:50px" ></i>
+			      
+		          <span>PDF</span>
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/zhang-shicong.github.io/en" class="waves-effect waves-light">
+			
+				<i class="fas fa-fw fa-link"></i>
+			
+			English Site
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-06-15
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="个人博客的静态网页建站经验总结"><a href="#个人博客的静态网页建站经验总结" class="headerlink" title="个人博客的静态网页建站经验总结"></a>个人博客的静态网页建站经验总结</h1><h2 id="1-git"><a href="#1-git" class="headerlink" title="1.git"></a>1.git</h2><h4 id="1-1-官网安装"><a href="#1-1-官网安装" class="headerlink" title="1.1 官网安装"></a>1.1 官网安装</h4><p><a target="_blank" rel="noopener" href="https://git-scm.com/download%E3%80%82%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E7%9A%8464%E4%BD%8D%E7%89%88%E6%9C%AC">https://git-scm.com/download。下载对应的64位版本</a></p>
+<h4 id="1-2-git教程"><a href="#1-2-git教程" class="headerlink" title="1.2 git教程"></a>1.2 git教程</h4><p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600%EF%BC%88%E5%BB%96%E9%9B%AA%E5%B3%B0%EF%BC%89">https://www.liaoxuefeng.com/wiki/896043488029600（廖雪峰）</a></p>
+<h4 id="1-3-检测安装成功"><a href="#1-3-检测安装成功" class="headerlink" title="1.3 检测安装成功"></a>1.3 检测安装成功</h4><p>出现对应版本号就算成功，检测方法是右键选择git bash中或者cmd中输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git -v</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="2-github"><a href="#2-github" class="headerlink" title="2.github"></a>2.github</h2><h4 id="2-1网址和注册"><a href="#2-1网址和注册" class="headerlink" title="2.1网址和注册"></a>2.1网址和注册</h4><p>网址：<a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a></p>
+<p>注册：访问 <a href="https://link.zhihu.com/?target=https://github.com/signup">GitHub 官网</a>，点击右上角的 “Sign up” 按钮，填写您的用户名、电子邮件地址和密码，然后点击 “Sign up for GitHub” 完成注册。注册完成后，GitHub 会向您提供的电子邮件地址发送一封验证邮件。请登录您的电子邮箱，查找来自 GitHub 的邮件，并点击邮件中的验证链接完成验证。</p>
+<h4 id="2-2GitHub学习资源"><a href="#2-2GitHub学习资源" class="headerlink" title="2.2GitHub学习资源"></a>2.2GitHub学习资源</h4><p><a href="https://link.zhihu.com/?target=https://docs.github.com/zh">GitHub官方文档</a></p>
+<h4 id="2-3-创建仓库"><a href="#2-3-创建仓库" class="headerlink" title="2.3 创建仓库"></a>2.3 创建仓库</h4><p>仓库是存储项目代码的地方。点击页面右上角的加号，选择<code>&quot;New repository&quot;</code>来创建一个新仓库。填写仓库名称、描述以及其他设置，即可创建成功。</p>
+<p><a href="https://link.zhihu.com/?target=https://github.com/">点此处登录Github</a></p>
+<p>登录Github后，新建一个仓库，名称<strong>必须</strong>为以下格式</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#注意名称别填错了！！！</span><br><span class="line">#例如abc.github.io</span><br><span class="line">你的Github用户名.http://github.io</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s2.loli.net/2024/06/14/uPKldcxVYvQLz8q.jpg" alt="1"></p>
+<p>注：如果要创建开源仓库，步骤如下：</p>
+<p>步骤一：登录 GitHub 账户<br>使用您的用户名和密码登录到 GitHub。</p>
+<p>步骤二：点击 “New” 按钮创建新仓库<br>在页面右上角找到 “New” 按钮，点击它进入创建新仓库页面。</p>
+<p>步骤三：填写仓库信息<br>在创建新仓库页面填写以下信息：</p>
+<ul>
+<li>Repository name: 输入您的仓库名称，例如 “my-first-repo”。</li>
+<li>Description (optional): 可选填，描述您的仓库。</li>
+<li>Public&#x2F;Private: 选择公开或私有，公开仓库任何人都可以查看，私有仓库只有您和授权用户可以访问。</li>
+<li>Initialize this repository with a README: 建议勾选此选项，初始化仓库并添加一个 README 文件。</li>
+</ul>
+<p>步骤四：点击 “Create repository”<br>填写完仓库信息后，点击绿色按钮 “Create repository” 创建您的开源仓库</p>
+<h4 id="2-4-本地ssh密钥"><a href="#2-4-本地ssh密钥" class="headerlink" title="2.4 本地ssh密钥"></a>2.4 本地ssh密钥</h4><p>在Git Bash中输入以下命令并回车</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 配置用户名和邮箱，注意填你自己的 Github用户名和邮箱</span><br><span class="line">git config --global user.name &quot;你的github 用户名&quot;</span><br><span class="line">git config --global user.email &quot;你的github 注册邮箱&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后继续输入以下代码，连续键入三次回车(即不设置密码)</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 生成 ssh 密钥，注意填你自己的 Github邮箱</span><br><span class="line"> ssh-keygen -t rsa -C &quot;github 注册邮箱&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后在本地C:\Users\用户\ .ssh目录下，找到 <strong>id_rsa.pub</strong> (公钥)并以记事本打开并复制内容</p>
+<p>注意：.xxx目录为隐藏目录，如果查看不到按下图。在win+e，上面导航栏上点击“查看-隐藏的项目”<img src="https://s2.loli.net/2024/06/14/V9xoNUGbprC1B8s.png" alt="image-20240614125557015"></p>
+<h4 id="2-5配置远程SSH"><a href="#2-5配置远程SSH" class="headerlink" title="2.5配置远程SSH"></a>2.5配置远程SSH</h4><p>打开 <strong>GitHub-Settings-SSH Keys</strong>页面，创建一个新的 SSH key，填写 Title 和 Key，</p>
+<p>Title可以随意，而 <strong>Key</strong>的内容则是我们刚才复制的 <strong>id_rsa.pub</strong> 中的内容，最后点击 <strong>Add SSH key</strong> 即可；</p>
+<p><img src="https://s2.loli.net/2024/06/14/VZbYASoD4sw6Tmu.jpg" alt="11"></p>
+<h4 id="2-6设置配置文件"><a href="#2-6设置配置文件" class="headerlink" title="2.6设置配置文件"></a>2.6设置配置文件</h4><p>在创建的<strong>Hexo</strong>文件夹下有一个**_config.yml**文件，用记事本打开，在最后几行有如下内容</p>
+<p><strong>注意：在配置所有的_config.yml文件时（包括theme中的），在所有的冒号:后边都要加一个空格，否则执行hexo命令会报错。</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>将其更改为</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  #这里填入你之前在GitHub上创建仓库的完整路径，例如</span><br><span class="line">  repo: git@github.com:fajixianhouyidelaobai/fajixianhouyidelaobai.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-7发布"><a href="#2-7发布" class="headerlink" title="2.7发布"></a>2.7发布</h4><p>输入以下代码，安装一个依赖包</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save   </span><br></pre></td></tr></table></figure>
+
+<p>然后输入</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g #生成静态页面，并发布至远程仓库</span><br><span class="line">#等同于下面这两行代码</span><br><span class="line">#hexo g</span><br><span class="line">#hexo d</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以在浏览器输入<a target="_blank" rel="noopener" href="https://fajixianhouyidelaobai.github.io/">https://fajixianhouyidelaobai.github.io/</a> 查看网页了！</p>
+<h4 id="2-8发布文章"><a href="#2-8发布文章" class="headerlink" title="2.8发布文章"></a>2.8发布文章</h4><p>输入以下代码</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文章名，中文也行&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后在<strong>XXX&#x2F;source&#x2F;_post</strong> 目录下就有.md文章，xxx指的是这个文件夹</p>
+<h2 id="3-node-js"><a href="#3-node-js" class="headerlink" title="3.node.js"></a>3.node.js</h2><h4 id="3-1下载"><a href="#3-1下载" class="headerlink" title="3.1下载"></a>3.1下载</h4><p>node.js中文网：<a target="_blank" rel="noopener" href="https://nodejs.cn/%E3%80%82%E9%80%89%E6%8B%A9%E9%95%BF%E6%9C%9F%E6%94%AF%E6%8C%81%E7%89%88%E3%80%82">https://nodejs.cn/。选择长期支持版。</a></p>
+<h4 id="3-2检测是否安装成功"><a href="#3-2检测是否安装成功" class="headerlink" title="3.2检测是否安装成功"></a>3.2检测是否安装成功</h4><p>命令行运行node -v和npm -v（注意中间要有空格），出现对应版本号即代表安装成功。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v #确认node安装成功</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v #确认npm安装成功</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-typora（markdown编辑器）"><a href="#4-typora（markdown编辑器）" class="headerlink" title="4.typora（markdown编辑器）"></a>4.typora（markdown编辑器）</h2><h4 id="4-1下载"><a href="#4-1下载" class="headerlink" title="4.1下载"></a>4.1下载</h4><p>下载网址：<a target="_blank" rel="noopener" href="https://www.yutu.cn/search/soft.html?t=10&k=typora&search_entra_pos=1">https://www.yutu.cn/search/soft.html?t=10&amp;k=typora&amp;search_entra_pos=1</a></p>
+<p>或者<a target="_blank" rel="noopener" href="https://download.typora.io/windows/typora-setup-x64-0.11.18.exe">https://download.typora.io/windows/typora-setup-x64-0.11.18.exe</a></p>
+<p>MD5：12F96372BEE2951ACF5627EA28F8A389</p>
+<p>因为都是破解版，需要激活码。</p>
+<h4 id="4-2-typora教程："><a href="#4-2-typora教程：" class="headerlink" title="4.2 typora教程："></a>4.2 typora教程：</h4><p><a target="_blank" rel="noopener" href="https://support.typoraio.cn/">Typora Support (typoraio.cn)</a></p>
+<p><a target="_blank" rel="noopener" href="https://support.typoraio.cn/Quick-Start/">Quick Start - Typora Support (typoraio.cn)</a></p>
+<p><a target="_blank" rel="noopener" href="https://support.typoraio.cn/zh/Markdown-Reference/">Typora 的 Markdown 语法 - Typora Support (typoraio.cn)</a></p>
+<h4 id="4-3常用快捷键"><a href="#4-3常用快捷键" class="headerlink" title="4.3常用快捷键"></a>4.3常用快捷键</h4><table>
+<thead>
+<tr>
+<th>文本格式编辑</th>
+<th>段落格式编辑</th>
+<th>视图切换（可忽略）</th>
+<th>文件系统操作（可忽略）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl + 1~6 ：插入标题</td>
+<td>Ctrl + Shift + X ：任务列表</td>
+<td>ctrl + shift + L ：侧边栏显示&#x2F;隐藏</td>
+<td>Ctrl + S 保存</td>
+</tr>
+<tr>
+<td>Ctrl + B ：加粗</td>
+<td>Ctrl + Shift + [ ：有序列表 可用：x. 空格</td>
+<td>Ctrl + Shift + 1 ：侧边栏大纲视图</td>
+<td>Ctrl + F 查找文件</td>
+</tr>
+<tr>
+<td>Ctrl + I ：斜体</td>
+<td>Ctrl + Shift + ] ：无序列表 可用：- 空格</td>
+<td>Ctrl + Shift + 2 ：侧边栏文件视图</td>
+<td>Ctrl + H 查找内容替换</td>
+</tr>
+<tr>
+<td>Ctrl + U ：下划线</td>
+<td>Ctrl + T ：创建表格 可用：右键-&gt;插入</td>
+<td>F9 ：打字机模式切换</td>
+<td>Ctrl + HOME 移动到文件头</td>
+</tr>
+<tr>
+<td></td>
+<td>Ctrl + Shift + K ：插入代码块 可用：右键-&gt;插入</td>
+<td>F8 ：专注模式切换</td>
+<td>Ctrl + END 移动到文件末尾</td>
+</tr>
+</tbody></table>
+<h2 id="5-pandoc（typora导出用的）"><a href="#5-pandoc（typora导出用的）" class="headerlink" title="5.pandoc（typora导出用的）"></a>5.pandoc（typora导出用的）</h2><h4 id="5-1下载安装"><a href="#5-1下载安装" class="headerlink" title="5.1下载安装"></a>5.1下载安装</h4><p>下载地址：<a target="_blank" rel="noopener" href="https://github.com/jgm/pandoc/releases%E3%80%82%E9%80%89%E6%8B%A9%E7%A8%B3%E5%AE%9A%E7%89%88%E7%9A%84[pandoc-3.2-windows-x86_64.zip](https://github.com/jgm/pandoc/releases/download/3.2/pandoc-3.2-windows-x86_64.zip)">https://github.com/jgm/pandoc/releases。选择稳定版的[pandoc-3.2-windows-x86_64.zip](https://github.com/jgm/pandoc/releases/download/3.2/pandoc-3.2-windows-x86_64.zip)</a></p>
+<p>需要<strong>配置系统环境变量</strong>，将它加入path环境变量大家庭。（win+i，然后搜“环境”字样即可找到环境变量）</p>
+<h4 id="5-2确认安装完成"><a href="#5-2确认安装完成" class="headerlink" title="5.2确认安装完成"></a>5.2确认安装完成</h4><p>命令pandoc -v 出现版本号就是安装成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pandoc -v #确认pandoc安装成功</span><br></pre></td></tr></table></figure>
+
+<p>在typora中找到“文件-偏好设置-导出”，设置一下它的路径（就是系统变量的路径，也就是这个东西exe文件路径，安装在哪里）</p>
+<h4 id="5-3学习Pandoc"><a href="#5-3学习Pandoc" class="headerlink" title="5.3学习Pandoc"></a>5.3学习Pandoc</h4><p> pandoc是一个命令行工具，如果想<strong>系统学习 Pandoc</strong> ，可参考官方文档：</p>
+<ul>
+<li>案例：<a target="_blank" rel="noopener" href="https://pandoc.org/demos.html">https://pandoc.org/demos.html</a></li>
+<li>入门教程：<a target="_blank" rel="noopener" href="https://pandoc.org/getting-started.html">https://pandoc.org/getting-started.html</a></li>
+<li>用户手册：<a target="_blank" rel="noopener" href="https://pandoc.org/MANUAL.html">https://pandoc.org/MANUAL.html</a></li>
+</ul>
+<h2 id="6-图床软件PIcgo（连接图床和typora的工具）"><a href="#6-图床软件PIcgo（连接图床和typora的工具）" class="headerlink" title="6.图床软件PIcgo（连接图床和typora的工具）"></a>6.图床软件PIcgo（连接图床和typora的工具）</h2><h4 id="6-1什么是图床"><a href="#6-1什么是图床" class="headerlink" title="6.1什么是图床"></a>6.1什么是图床</h4><p>图床（图片托管服务）也可以理解为网络上提供图片托管服务的服务器。用户可以将图片上传至图床进行保存，同时图床向用户返回图片的外链（用于从网站外部访问图片的网络链接），任何第三方站点都可以通过外链查看图片。</p>
+<p>有了图床之后，只要将 Markdown 文档中的图片上传到图床并使用图床返回的图片外链，那么同一篇 Markdown 文档在多个网站发布的时候，就不需要再上传文档中的图片了。不过，由于 Markdown 文档中的图片链接是网络链接，所以在本地查看 Markdown 文档时需要联网才能显示图片。</p>
+<h4 id="6-2常见的图床"><a href="#6-2常见的图床" class="headerlink" title="6.2常见的图床"></a>6.2常见的图床</h4><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>网址</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SM.MS</td>
+<td><a target="_blank" rel="noopener" href="https://smms.app/">https://smms.app/</a></td>
+<td>国外、免费&#x2F;收费</td>
+</tr>
+<tr>
+<td>阿里云OSS（对象存储服务）</td>
+<td><a target="_blank" rel="noopener" href="https://www.aliyun.com/product/oss">https://www.aliyun.com/product/oss</a></td>
+<td>国内、收费</td>
+</tr>
+<tr>
+<td>腾讯COS</td>
+<td><a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/cos">https://console.cloud.tencent.com/cos</a></td>
+<td>国内、收费</td>
+</tr>
+<tr>
+<td>Github</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/">https://github.com</a></td>
+<td>国外、免费</td>
+</tr>
+<tr>
+<td>七牛云-对象存储</td>
+<td><a target="_blank" rel="noopener" href="https://portal.qiniu.com/kodo">https://portal.qiniu.com/kodo</a></td>
+<td>国内、免费&#x2F;收费</td>
+</tr>
+</tbody></table>
+<h4 id="6-3PicGo"><a href="#6-3PicGo" class="headerlink" title="6.3PicGo"></a>6.3PicGo</h4><p> 是一款将图片上传至图床并获取图片 URL 链接的工具，可以将其视为用户和图床之间的中间人（代理），通常将这类工具称为图床工具。有了像 PicGo 这样的图床工具，我们在 Markdown 文档中插入图片时，可以实现图片自动上传到图床并使用图片在图床中的网络链接。</p>
+<h4 id="6-4PicGo-的官网用户指南："><a href="#6-4PicGo-的官网用户指南：" class="headerlink" title="6.4PicGo 的官网用户指南："></a>6.4PicGo 的官网用户指南：</h4><p><a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/zh/guide/">https://picgo.github.io/PicGo-Doc/zh/guide/</a></p>
+<p><a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/zh/">https://picgo.github.io/PicGo-Doc/zh/</a></p>
+<p>需要先安装node.js</p>
+<h4 id="6-5下载-PicGo"><a href="#6-5下载-PicGo" class="headerlink" title="6.5下载 PicGo"></a>6.5下载 PicGo</h4><p><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
+<p><a target="_blank" rel="noopener" href="https://mirrors.sdu.edu.cn/github-release/1707260135/github-release/Molunerfinn_PicGo">https://mirrors.sdu.edu.cn/github-release/1707260135/github-release/Molunerfinn_PicGo</a></p>
+<p>注：本文下载的版本是 PicGo-Setup-2.3.1-x64.exe ，在 Windows 10 系统中安装。</p>
+<h4 id="6-6设置图床"><a href="#6-6设置图床" class="headerlink" title="6.6设置图床"></a>6.6设置图床</h4><p>在使用 PicGo 上传图片之前，先要在 PicGo 中设置图床。下面以图床 SM.MS 为例，简单介绍 PicGo 中的图床设置。</p>
+<p>1、获取图床的令牌（Token）。</p>
+<p>（1）登录 <a target="_blank" rel="noopener" href="https://smms.app/">https://smms.app/</a> ，选择【User】→【Login】，登录账号。</p>
+<p>（2）选择【User】→【Dashboard】，然后在左侧导航栏中选择【API Token】，拷贝 Secret Token （注：单击 Generate Secret Token ，可以重置 Secret Token ），如下图所示：</p>
+<p><img src="https://s2.loli.net/2024/06/14/KS15LbUZcAHqj2p.png" alt="image-20240220085113308"></p>
+<p>2、打开 PicGo ，在左侧导航栏中选择【图床设置】→【SM.MS】。</p>
+<p><img src="https://s2.loli.net/2024/06/14/u5a1TgekU3ADCrZ.png" alt="image-20240220161946344"></p>
+<p>（1）将 SM.MS 图床的令牌（Token）粘贴到【设定Token】栏中。</p>
+<p>（2）输入 SM.MS 图床的域名：smms.app 。</p>
+<p>（3）PicGo 默认使用 SM.MS 图床，否则单击【设为默认图床】按钮，将其设为默认图床。</p>
+<p>（4）单击【确定】按钮完成图床设置。</p>
+<h4 id="6-7在-Typora-中配置-PicGo"><a href="#6-7在-Typora-中配置-PicGo" class="headerlink" title="6.7在 Typora 中配置 PicGo"></a>6.7在 Typora 中配置 PicGo</h4><p>1、在 Typora 中选择 【文件】→ 【偏好设置…】，打开【偏好设置…】窗口。</p>
+<p>2、按照下图所示进行设置。</p>
+<p><img src="https://s2.loli.net/2024/06/14/P1X6hibjUO3amGd.png" alt="img"></p>
+<p>注：单击【验证图片上传选项】，显示验证失败，但实际可以上传图片。</p>
+<p>设置完毕后，当在 Markdown 文档中插入图片时，会自动通过 PicGo 将图片上传到图床，图片链接使用从图床返回的外链。（注：从剪切板直接粘贴到 Markdown 文档中的图片在上传之前会先自动保存到文件夹 <code>C:\Users\用户名\AppData\Roaming\Typora\typora-user-images</code> 中。）</p>
+<p>对于 Markdown 文档中之前插入的本地链接图片，在图片上单击鼠标右键，在弹出的菜单中选择【上传图片】，即可通过 PicGo 将图片上传到图床，图片的链接也自动换成网络链接。</p>
+<h2 id="7-hexo（静态博客框架）"><a href="#7-hexo（静态博客框架）" class="headerlink" title="7.hexo（静态博客框架）"></a>7.hexo（静态博客框架）</h2><p>Hexo是一个快速、简单且强大的静态博客框架，它使用Node.js为平台。</p>
+<p>hexo中文站网址：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/%EF%BC%88%E8%BF%99%E9%87%8C%E6%9C%89%E6%95%99%E7%A8%8B%EF%BC%89">https://hexo.io/zh-cn/（这里有教程）</a></p>
+<h4 id="7-1hexo常见命令"><a href="#7-1hexo常见命令" class="headerlink" title="7.1hexo常见命令"></a>7.1hexo常见命令</h4><p>详细命令：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">https://hexo.io/zh-cn/docs/commands.html</a></p>
+<p>常见命令汇总</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install #根据当前目录下的package.json安装所需依赖</span><br><span class="line">npm config list #列出当前npm的配置</span><br><span class="line">npm install -g #全局安装包</span><br><span class="line">npm install -save #不仅会安装，而且会把模块依赖写入package.json中的dependencies 节点 </span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean # 删除public文件的内容,俗称清缓存</span><br><span class="line">hexo g # 生成静态文件到public</span><br><span class="line">hexo s # 本地运行，运行本地服务器</span><br><span class="line">hexo d # 发布静态文件到托管平台</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-1-1-init新建网站"><a href="#7-1-1-init新建网站" class="headerlink" title="7.1.1  init新建网站"></a>7.1.1  init新建网站</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init [foleder] #这个[foleder]可以不写，作用是新建一个网站。如果没设置folder,hexo默认在目前的文件夹建立网站</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-1-2-new新建文章"><a href="#7-1-2-new新建文章" class="headerlink" title="7.1.2 new新建文章"></a>7.1.2 new新建文章</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt; #新建一篇文章，如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。没有空格的话会把引号也当成标题……就离谱</span><br></pre></td></tr></table></figure>
+
+<p>说人话就是这个代码不太友好，其实就是这样打</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 第一篇文章 #正常情况下就是在source\_posts文件夹下创建一个名字叫“第一篇文章”的md文件，我们自带的“hello  world”其实也在里面。和正常在里面建立一个.md文件作用一样</span><br></pre></td></tr></table></figure>
+
+<p>更详细的参数看详细命令：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">https://hexo.io/zh-cn/docs/commands.html</a></p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>-p</code>, <code>--path</code></td>
+<td align="left">自定义新文章的路径</td>
+</tr>
+<tr>
+<td align="left"><code>-r</code>, <code>--replace</code></td>
+<td align="left">如果存在同名文章，将其替换</td>
+</tr>
+<tr>
+<td align="left"><code>-s</code>, <code>--slug</code></td>
+<td align="left">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
+</tr>
+</tbody></table>
+<h5 id="7-1-3-generate"><a href="#7-1-3-generate" class="headerlink" title="7.1.3 generate"></a>7.1.3 generate</h5><p>生成静态文件。代码是这样的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g #生成静态文件，一般是和打开本地服务器hexo s连续使用的代码。在那之前可能会需要清理一下缓存，也就是hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>一般就是这样，详细的参数看详细命令：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">https://hexo.io/zh-cn/docs/commands.html</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清理缓存</span><br><span class="line">hexo g #生成静态文件</span><br><span class="line">hexo s #打开本地服务器</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-1-4-server"><a href="#7-1-4-server" class="headerlink" title="7.1.4 server"></a>7.1.4 server</h5><p>启动服务器。代码是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s #打开本地服务器，启动服务器。默认情况下，访问网址为： http://localhost:4000/。</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-1-5-deploy"><a href="#7-1-5-deploy" class="headerlink" title="7.1.5 deploy"></a>7.1.5 deploy</h5><p>部署网站。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d #部署网站到你的托管平台，本文也就是免费的github的仓库</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-1-6-s、d、g的区别"><a href="#7-1-6-s、d、g的区别" class="headerlink" title="7.1.6  s、d、g的区别"></a>7.1.6  s、d、g的区别</h5><p>s:安装到生产环境（dependencies），也就是我的电脑中</p>
+<p>d:安装到开发环境（devDependencies），也就是我的托管平台中</p>
+<p>g:安装到全局，也就是生成静态文件</p>
+<h5 id="7-1-7-clean"><a href="#7-1-7-clean" class="headerlink" title="7.1.7 clean"></a>7.1.7 clean</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清楚缓存文件（db.json）和已经生成的静态文件（public），就是换完主题后必须要清理</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-1-8-version"><a href="#7-1-8-version" class="headerlink" title="7.1.8 version"></a>7.1.8 version</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo v #显示hexo版本，一般是确认装没装完用的</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-1-9-migrate"><a href="#7-1-9-migrate" class="headerlink" title="7.1.9 migrate"></a>7.1.9 migrate</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo migrate &lt;type&gt; #从其他博客迁移内容嘿嘿，type是接口的意思，一般是api（应用程序编程接口），相当于俩程序之间的中介人。</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="7-2下载hexo"><a href="#7-2下载hexo" class="headerlink" title="7.2下载hexo"></a>7.2下载hexo</h4><p>在使用这个hexo之前肯定要先下载node.js和npm，可以用这个命令组来下载</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli #下载hexo</span><br><span class="line">hexo -v #查看是否安装成功</span><br><span class="line">hexo init #初始化hexo文件夹</span><br><span class="line">npm install #下载模块依</span><br></pre></td></tr></table></figure>
+
+<p>创建hexo项目：初始化一个新的hexo项目 hexo init your-blog-name</p>
+<p>如果你的博客文件夹名字叫“blog”，那么代码就是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+
+<p>进入项目目录 进入项目目录：<code>cd your-blog-name</code> ；没发现没啥作用，不如直接在文件夹内右键open git bash here </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init #初始化这个文件夹，要注意这个文件夹必须是空的，而且要在全英文目录下</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以素质三连</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g #生成静态网页</span><br><span class="line">hexo s #生成本地服务器</span><br></pre></td></tr></table></figure>
+
+<p>然后选中这个localhost：4000字样并按住ctrl键在网页上查看了，也可直接复制到网页上查看</p>
+<h4 id="7-3远程部署到git仓库"><a href="#7-3远程部署到git仓库" class="headerlink" title="7.3远程部署到git仓库"></a>7.3远程部署到git仓库</h4><p>想要远程部署需要先安装这个hexo-deployer-git（仅适用于git类型仓库的方法）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>安装好之后，修改博客目录配置文件中的deploy字段，也就是这个叫_config.yml的文件下的最下面。用记事本打开</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:fajixianhouyidelaobai/fajixianhouyidelaobai.github.io.git #这个是git的仓库项目地址。需要在git中配置完成。</span><br><span class="line">  branch: main #分支</span><br><span class="line">  message：什么什么什么  #自定义提交说明，这个字段可以没有</span><br></pre></td></tr></table></figure>
+
+<p>如果git仓库是ssh，则需要生成ssh，看上面git中ssh的生成</p>
+<p>当然这些配置完成后可以用hexo d命令部署到git仓库了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d #部署到托管仓库</span><br></pre></td></tr></table></figure>
+
+<p>如果使用hexo d之后出现这个：<code>ERROR Deployer not found: git</code>,这是因为我们没有install与git匹配的工具</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-deployer-git </span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="7-4配置hexo"><a href="#7-4配置hexo" class="headerlink" title="7.4配置hexo"></a>7.4配置hexo</h4><p>当我们安装完毕的时候，就需要对Hexo进行一些配置，具体是通过<code>_config.yml</code>文件来完成的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">.deploy_git </span><br><span class="line">node_modules //包所需要的依赖</span><br><span class="line">public // 静态网页存储的目录</span><br><span class="line">scaffolds // 样本，也就是模板文件夹</span><br><span class="line">source // 我们自己的md文件，存放用户资源（里面有个—posts #我的博客文档，里面就是.md的文件了）</span><br><span class="line">themes // 主题文件</span><br><span class="line">.gitignore</span><br><span class="line">_config.yml // 网站配置信息</span><br><span class="line">db.json</span><br><span class="line">package.json</span><br><span class="line">package-lock.json</span><br></pre></td></tr></table></figure>
+
+<h5 id="7-4-1-config-yml"><a href="#7-4-1-config-yml" class="headerlink" title="7.4.1_config.yml"></a>7.4.1_config.yml</h5><p>这个是hexo的配置文件，用记事本打开后可以看到</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Site</span><br><span class="line">title: 发际线后移的老白 #这是标题</span><br><span class="line">subtitle: &#x27;&#x27; #这是副标题</span><br><span class="line">description: 这是一个打算用于整理个人的知识和对外展示简历的个人博客。打算用github白嫖。#这是网站介绍</span><br><span class="line">keywords:</span><br><span class="line">author: 老白 #这是名称</span><br><span class="line">language: #这是支持语言</span><br><span class="line">  - zh-CN</span><br><span class="line">  - en</span><br><span class="line">  - zh-TW</span><br><span class="line">timezone: &#x27;&#x27;#这是时区</span><br></pre></td></tr></table></figure>
+
+<h4 id="7-5发布文章"><a href="#7-5发布文章" class="headerlink" title="7.5发布文章"></a>7.5发布文章</h4><p>输入以下代码</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;文章名，中文也行&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后在<strong>XXX&#x2F;source&#x2F;_post</strong> 目录下就有.md文章，xxx指的是这个文件夹</p>
+<h4 id="7-6主题"><a href="#7-6主题" class="headerlink" title="7.6主题"></a>7.6主题</h4><p>创建 Hexo 主题非常容易，您只要在 <code>themes</code> 文件夹内，新增一个任意名称的文件夹，并修改 <code>_config.yml</code> 内的 <code>theme</code> 设定，即可切换主题。一个主题可能会有以下的结构：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml #主题的配置文件，上传的时候记见7.3远程部署</span><br><span class="line">├── languages #语言模块，同7.4.1</span><br><span class="line">├── layout #布局文件夹，用来存放主题的模板文件</span><br><span class="line">├── scripts #脚本文件夹</span><br><span class="line">└── source #资源文件夹，也就是类似博客文章那个夹</span><br></pre></td></tr></table></figure>
+
+<p>更换完主题后四连</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清理静态页面，清缓存</span><br><span class="line">hexo g #全局部署，生成静态网页</span><br><span class="line">hexo s #本地服务器启动，查看有无错误</span><br><span class="line">hexo d #传到远程仓库</span><br></pre></td></tr></table></figure>
+
+<p>比较好用的包</p>
+<p>stellar <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/theme-settings/">https://xaoxuu.com/wiki/stellar/theme-settings/</a> #商务风的主题，简单干净</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2024/06/15/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E5%BB%BA%E7%AB%99%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            老白
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/06/15/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-15
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            老白
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2024</span>
+            
+            <a href="/about" target="_blank">老白</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
