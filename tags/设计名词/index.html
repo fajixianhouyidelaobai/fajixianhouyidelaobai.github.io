@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, 老白">
+    <meta name="keywords" content="标签: 设计名词, 老白">
     <meta name="description" content="老白个人文档整理用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类 | 老白</title>
+    <title>标签: 设计名词 | 老白</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -339,100 +339,115 @@
 
     
 
-<div id="category-cloud" class="container chip-container">
+<div id="tags" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
             <div class="tag-chips">
                 
                 
-                
-                <a href="/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="个人博客: 1">
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" title="博客: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">个人博客
+                            data-tagname="博客" style="background-color: #F9EBEA;">博客
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%B7%A5%E4%BD%9C%E5%B8%B8%E8%AF%86/" title="工作常识: 2">
+                <a href="/tags/%E8%BD%AF%E4%BB%B6/" title="软件: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">工作常识
+                            data-tagname="软件" style="background-color: #F5EEF8;">软件
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%BC%96%E7%A8%8B/" title="编程: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="编程" style="background-color: #D5F5E3;">编程
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%A1%8C%E4%B8%9A%E9%BB%91%E8%AF%9D/" title="行业黑话: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="行业黑话" style="background-color: #E8F8F5;">行业黑话
                         <span class="tag-length">2</span>
                     </span>
                 </a>
                 
+                
+                <a href="/tags/%E5%B7%A5%E4%BD%9C%E5%B8%B8%E8%AF%86/" title="工作常识: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="工作常识" style="background-color: #FEF9E7;">工作常识
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%AE%BE%E8%AE%A1%E5%90%8D%E8%AF%8D/" title="设计名词: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="设计名词" style="background-color: #F8F9F9;">设计名词
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
     </div>
 </div>
 
-
-    
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
-
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
-
     
 
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
-            }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"个人博客","max":3},{"name":"工作常识","max":3}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            color: ['#3ecf8e'],
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [1,2],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
-
-    radarChart.setOption(option);
-</script>
-
-    
-
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="行业黑话, 工作常识, 设计名词" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2024/06/19/%E8%AE%BE%E8%AE%A1%E6%9C%AF%E8%AF%AD%E7%9B%B8%E5%85%B3/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="行业黑话整理">
+                            
+                            <span class="card-title">行业黑话整理</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-06-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%B7%A5%E4%BD%9C%E5%B8%B8%E8%AF%86/" class="post-category">
+                                工作常识
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">
