@@ -1,0 +1,2120 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="硬核的计算机知识, Hexo">
+    <meta name="description" content="硬核的计算机知识1.计算机怎么说呢，这个作者真是天才。怕丢，转存下自己本地。
+原文链接：https://mp.weixin.qq.com/s/_Xc-KfyJumxCwHSJxgUpKw
+我和小宇早恋了，我们家住隔壁。
+
+1.编码与电路——">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>硬核的计算机知识 | Hexo</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">硬核的计算机知识</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">软件知识</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">硬件知识</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">
+                                <span class="chip bg-color">计算机组成</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                计算机
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2025-09-18
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="硬核的计算机知识"><a href="#硬核的计算机知识" class="headerlink" title="硬核的计算机知识"></a>硬核的计算机知识</h1><h2 id="1-计算机"><a href="#1-计算机" class="headerlink" title="1.计算机"></a>1.计算机</h2><p>怎么说呢，这个作者真是天才。怕丢，转存下自己本地。</p>
+<p>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/_Xc-KfyJumxCwHSJxgUpKw">https://mp.weixin.qq.com/s/_Xc-KfyJumxCwHSJxgUpKw</a></p>
+<p><strong>我和小宇早恋了，我们家住隔壁。</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynUTEKLZfsIPK3TrFStxLzgME3lEBWmgwPXOjlBmtczdKeAjBcKg2CukA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h3 id="1-编码与电路——信号的转换"><a href="#1-编码与电路——信号的转换" class="headerlink" title="1.编码与电路——信号的转换"></a>1.编码与电路——信号的转换</h3><p>晚上父母会把手机没收，但我们还想继续聊天，又不敢发出声音，于是我们想到了这个办法…</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTqC7P9cNhm3FWp1vIgzictnPmALUfamB7sCApNvTNSzAtURHCO8iatiaDZTxgcG7KuJLSFuia9cTrGtw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>我们把所有的中文都用灯泡的亮灭组合来表示，同时约定好每隔一秒读取一次灯泡的状态并记录下来，这是我们的暗号。</p>
+<p><strong>我</strong>：亮亮灭灭亮</p>
+<p><strong>喜</strong>：灭亮亮灭灭</p>
+<p><strong>欢</strong>：亮灭亮灭亮</p>
+<p><strong>你</strong>：亮亮亮灭灭</p>
+<p>这样，我们虽然没有了手机，依然可以日以继日地聊天，虽然效率很低，但依然很快乐。</p>
+<p>我和小宇就这样在不经意间，将语言转换成为了灯泡的亮灭组合，这个过程叫做<strong>编码</strong>。</p>
+<h3 id="2-门电路——信号的关联"><a href="#2-门电路——信号的关联" class="headerlink" title="2.门电路——信号的关联"></a>2.门电路——信号的关联</h3><p>我和小宇就这样一直秘密保持着通话，直到上了大学，父母再也管不了我们用手机了。</p>
+<p>但这么多年的小灯泡通话，使我们总觉得事情没那么简单，于是我们开始了一些新的探索。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynU3icEhicjC0ibK979dF8VOpHxicWhz8sO3kd9Z8ZZJs1KZic5mU2TmnYJBdg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>我们增加了一个开关。此时当两个开关同时闭合时，灯泡才会亮。</p>
+<p>这样两个开关与灯泡之间，不再是之前简单的对应关系了，而是有了<strong>逻辑</strong>。</p>
+<p>开关的断开与闭合分别对应着电路的断开与连通。而小灯泡的不亮与亮，也分别对应着电路的断开与连通。那这两者就可以统一，不再依赖于具体的实物表现了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUFVSKiccHI6QxV2XFyyH8No6mYTAc03Rdfukh2ZdLklZVayzDiaW17dPg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>还有，开关的连通与断开，是主动的。而小灯泡的连通与断开，是被动的，是结果。</p>
+<p>我们把开关这里的连通与断开称为<strong>输入端</strong>，把灯泡的连通与断开称为<strong>输出端</strong>，并且将整个电路都封装在一个图形里，可以得到如下抽象：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUckNdfYcgDW1awtzHaKxQia3ASbE1356QuRFqS0iaqOpLaIqnSlKrAYUA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>我们决定把这种电路叫做<strong>门电路</strong>， 上面这个叫<strong>与门</strong>。 </p>
+<p>为了今后更为抽象的探索，我们将电路连通表示为数字 1，电路断开表示为数字 0。</p>
+<p>我们将这种表示方式称为<strong>二进制</strong>。</p>
+<table>
+<thead>
+<tr>
+<th><strong>输入 A</strong></th>
+<th><strong>输入 B</strong></th>
+<th><strong>输出</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUZibYccaByeOibCMtCPXvOV6d9bhrLfM1FkH773XMwIsdMXxRqkebuNHQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>慢慢地，我们发现了越来越多的玩法。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUu22kmrDQwwuPeicYLYnMRBtWKXXKKzaIYNfT4BohXjkibFGwNaeVJHGQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>上面这种电路，我把他抽象成如下门电路形状，叫做<strong>或门</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUn0icRvEHLASAgZT4L0sWwgT1J50gJ45VRVLgCypJttVNt5aj4OWBib3w/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>之后便一发不可收拾，我和小宇设计了越来越多的门电路，我们发现，只要是我们能想到的逻辑关系，都可以设计成对应的门电路。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynUxicVv135IuAia9YvqEgPm79Hfib1RWEbl5jmGMmbdpObJHK9jxx293Nuw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<h3 id="3-加法器——信号的计算"><a href="#3-加法器——信号的计算" class="headerlink" title="3.加法器——信号的计算"></a>3.加法器——信号的计算</h3><p>十进制数可以转换成二进制数，而二进制数又可以对应到门电路的输入端与输出端。</p>
+<p>于是我和小宇有了一个大胆的想法，能不能设计一个计算加法的电路呢？</p>
+<p>我们首先从最简单的一位二进制数相加开始：</p>
+<p>0+0&#x3D;0；0+1&#x3D;1；1+0&#x3D;1；1+1&#x3D;10</p>
+<p>变成一张表格如下</p>
+<table>
+<thead>
+<tr>
+<th><strong>加数 A</strong></th>
+<th><strong>加数 B</strong></th>
+<th><strong>加和<strong><strong>输</strong></strong>出</strong></th>
+<th><strong>进位输出</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>即我们需要设计出一种电路，可以达到表中的输入与输出效果。</p>
+<p>经过不懈努力，终于发现这个电路可以由<strong>异或门</strong>和<strong>与门</strong>两个门电路组成。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynU2TckHxUExclrnaAib8RJoriarzxRCNNUKRaUXiaSVxqBa3akSmkRVjCMw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>这个装置实现了二进制的一位加法，但它并不完美，因为只考虑了这两个数的进位输出，但没有考虑上一位的进位，所以只能叫<strong>半加器</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynU9NHGQXicjobKuvrPv0MM55ia0DKVDccibpxJh4waJ3PQuIWyeZxqy2qnA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>如果将前一个进位考虑进来，只需再多一个半加器，并且拼接一个或门即可。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynU74MNbm0VuYibzYREZhNrKkpuibbh0FNA9jjnJ68K0weaI2LCCN9tUR4g/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>此时我们已经建立好了一个完美的一位加法器，并自豪地称之为<strong>全加器</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynU6WR4tibBsFxbGnxt3yaMtttrCAR7tMmBicJniaelk0fIR1SP58OD4TPJw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>全加器做出来之后，无论多少位的加法器就都可以做出来了，只需将全加器逐个拼起来即可。我们尝试做一个<strong>八位加法器</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynUVffibEDiaia0wq1ibgxicH21AbKTe6Pm1XZlLakibDf8xibnMPOID3pXLBesg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>OK，大功告成，有了加法器，理论上就可以实现任何的数学运算了。</p>
+<p>因为我们知道乘法可以转换成加法，除法可以转换成减法，而减法又可以转换成补码的加法。现在我们可以自豪地称这个部件为，<strong>算术逻辑单元 ALU</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynU4AUTrXic63sNLKLgGtDcAKoCCVDQV8FJBoUEXicB9UAv9amotziciczsYw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"> </p>
+<h3 id="4-时钟——信号的震荡"><a href="#4-时钟——信号的震荡" class="headerlink" title="4.时钟——信号的震荡"></a>4.时钟——信号的震荡</h3><p>我和小宇都非常高兴，终于用电路的方式实现了计算功能。</p>
+<p>但慢慢的觉得没什么意思了，于是我们又突发奇想，设计了如下诡异的电路。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUXQyjJIaicvPvhbr1bckiaqCnqrweaSFB85tbJt7GBXoJjelt6kcTa3uQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>当闭合开关 A 时，整个电路联通，开关 B 将会被吸下来，整个电路断开，电磁铁失去磁性，开关 B 又会弹上去，此时电路又联通，开关 B 又被吸下来。</p>
+<p>就这样，开关 B 不断地快速地在开和闭之间循环进行，而我们始终没有去干预这个电路，因此该电路有了<strong>自反馈</strong>的特性。</p>
+<p>由于开关 B 的来回震荡，我们将这种电路称为<strong>振荡器</strong>，由于它可以产生不断变化的电信号，就像时钟一样不停且规律地跑着，我们将这个装置又称为<strong>时钟</strong>。它所产生的交替的电信号称为<strong>时钟信号</strong>。</p>
+<h3 id="5-RAM——保存信号"><a href="#5-RAM——保存信号" class="headerlink" title="5.RAM——保存信号"></a>5.RAM——保存信号</h3><p>虽然有了加法器，但是输入的数字从哪里来？能不能先保存在某个地方呢？</p>
+<p>我和小宇经过多次实验，发明了一个非常复杂的电路：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTqC7P9cNhm3FWp1vIgzictnyQ3N0tNyTVLUceOTyK7R1M0Ye7AI2yZk4MoLP5zYUgrATgekt29ibnA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>如果输入端为 1，改变”某控制端”信号（信号由 0 变化到 1 这个瞬间），则输出端变为 1，之后输出端仍然保持（存储）着刚刚的 1。</p>
+<p>如果输入端为 0，改变”某控制端”信号，则输出端变为 0，之后输出端仍然保持（存储）着刚刚的 0。</p>
+<p>如果想不明白也没关系，只要记住这个电路的设计，实现了一位的存储功能！我们叫它 <strong>1 位锁存器</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynUoWD88N8yqPR5RWyPRspdBYSDrhCFE8cJZzecZ2wBVYlMIlNfRZHkuA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>然后我们把多个锁存器组合起来，再加上一些 3-8 译码器，8-1 选择器等电路，就可以实现一个能保存 8 位二进制的存储器，并且可以随机地读写它， 我们把它叫做 <strong>RAM</strong>，简称为<strong>内存</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynU4cQfic6D4RmPcSwQly9nnPuMuicJ93ZKibibyS1cKHqmWlMkgar7ibDsF9Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>这个组件通过再次组合，可以形成 N × M 的 RAM 阵列。比如我们可以表示一个 1024 * 8 的 RAM 阵列。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXQJwVlelXy8bYBDribgXgynUzsyEtB1aUYYfu43CDH1nVlf0iajGYqsicmdAYkXVmuELMZE2Lth8UzGA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>这表示存储容量为 1024 个单位，每个单位占 8 位。</p>
+<p>为了更方便地表示，我们规定 1024 &#x3D; 1K，8 位 &#x3D; 1 字节（8 bit &#x3D; 1 byte），那么我们就可以说，这个 RAM 的存储容量为 1K 个单位，每个单位占 1B。或者说，地址空间为 1K，存储容量是 1KB。 </p>
+<p>此时这个 RAM 模块已经近乎完美了，我们甚至可以单独对其进行使用，将数据存入某个地址，将某个地址中的数据读出。</p>
+<p>怎么方便人操作呢？只需要将地址输入、数据输入、写操作端分别接入一个<strong>控制面板</strong>，由开关来控制这些信号的输入是 1 还是 0 即可，然后再将数据输出接入一些灯泡方便观察，这样一个单独的可以手动操作的存储装置，就搞定啦。（下图中有彩蛋~）</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTqC7P9cNhm3FWp1vIgzictnzQurIRaBglEAiaJaPFEbIibRwPDV754WDViaic2JBRG5FVyAVZ1d639beg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>有了可读写的内存，我们就可以事先把几个数字存储内存中了，接下来，我们能否让算术逻辑单元 ALU <strong>自动地读取这个数字</strong>，进行加法运算呢？</p>
+<h3 id="6-程序——自动化"><a href="#6-程序——自动化" class="headerlink" title="6.程序——自动化"></a>6.程序——自动化</h3><p>我们先引入一个新的组件，<strong>10 位计数器</strong>，这里的 Clk 就接入我们在第四部分讲的时钟信号，Clr 是清零端，具体效果下面动图一目了然。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUt3E91ib7M66LjeZbe86Z9N4n1CoOSK2h39SdwzGDQzTicEyIk4Jy7fRA/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>计数器的输出就是 0，1，2，3，4，5，可以当作内存中的<strong>地址</strong>。</p>
+<p>我们把这个计数器，以及上面讲的 ALU 与 RAM 全部连在一起，尝试实现一个可以<strong>累积求和</strong>的装置。</p>
+<p>我们想计算的是 1+2+3+4+5+6+7,  这个自动化的计算器是这么运行的</p>
+<p>1、用控制面板在 RAM 的地址 0<del>6 处存上 1</del>7 这几个数字的，在上一节已经实现了。</p>
+<p>2、当计数器的值是 0 时，数据 1 被输出到加法器进行计算，此时加法器 A&#x3D;1，B&#x3D;0，计算结果为 1，但记住锁存器存储的是上一次的加法器输出 0，这次的计算结果要等下一次锁存器遇到上升沿信号。</p>
+<p>3、当计数器的值是 1 时， 数据 2 被输入到加法器，此时锁存器存储了上一次的计算结果 1，并将这个 1 输出给小灯泡，并同时回传到加法器的B，所以此时加法器 A&#x3D;2，B&#x3D;1，计算结果为 3</p>
+<p>4、当计数器的值是 3 时，以此类推，请看下图 </p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUiaibic1Bp5axwnWvcINC3YoicaVzRdicm5ULuQXP7PQXLSLzAVHzy4ZsFpw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>我们将累加求和这个过程<strong>自动化</strong>了！之后如果想计算累加和，只需要用控制面板事先在内存里存好数据就可以了！是不是很方便？</p>
+<h3 id="7-程序指令"><a href="#7-程序指令" class="headerlink" title="7.程序指令"></a>7.程序指令</h3><p>我们还想要更多的自动化！</p>
+<p>现在这个装置，只能无脑地将 RAM 中的数据从头到尾一直累加下去，无法选择加哪个不加哪个，也无法选择什么时候停止。</p>
+<p>比如我们 RAM 中的数据是这样的。</p>
+<table>
+<thead>
+<tr>
+<th><strong>地址</strong><strong>（16 进制）</strong></th>
+<th><strong>数据</strong><strong>（10进制）</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x00</td>
+<td>…</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>10</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>…</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>20</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>30</td>
+</tr>
+<tr>
+<td>0x05</td>
+<td>…</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody></table>
+<p>我们只想让 RAM 蓝色地址处的数据进行累加，其他地方的数据忽略，并且到 RAM 0x05 处就停止，该怎么做呢？</p>
+<p>我们可以再增加一个 RAM，这个 RAM 里存放的数据，表示”<strong>指令</strong>“的含义！</p>
+<p>我们先发明三种指令。</p>
+<p><strong>add</strong>：把 RAM 这个位置处的值进行累加</p>
+<p><strong>nop</strong>：忽略此处的值（也就是什么都不做）</p>
+<p><strong>halt</strong>：停止（禁止计数器的值加一） </p>
+<p>那么要想达到上述功能，相应的这个指令 RAM 中的数据应该是这样的。</p>
+<p>注意：下面指令 RAM 的地址和上面数据 RAM 的地址之间有一一对应关系！</p>
+<table>
+<thead>
+<tr>
+<th><strong>地址</strong><strong>（16 进制）</strong></th>
+<th><strong>指令****RAM的值</strong></th>
+<th><strong>指令含义</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x00</td>
+<td>nop</td>
+<td>什么都不做</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>add</td>
+<td>累加</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>nop</td>
+<td>什么都不做</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>add</td>
+<td>累加</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>add</td>
+<td>累加</td>
+</tr>
+<tr>
+<td>0x05</td>
+<td>halt</td>
+<td>停止</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody></table>
+<p>我们需要引入一个<strong>控制单元</strong>，放在如下位置。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQJwVlelXy8bYBDribgXgynUmMNXtDr6t6jdHDC7fmxibpgYBxL6AImkVtNcnhRbJ5dlUDenwL6TPdg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>遇到 nop 指令(0x00)，那输出就将锁存器的 W 位禁止，不允许锁存器写操作，这样累加结果就不会录入。</p>
+<p>再比如遇到输入为 halt 指令(0x05)，就将计数器的 EN 位禁止，不允许计数器 +1，这样就达到了停止的效果。</p>
+<p>此时再让时钟信号震荡起来，就可以达到有选择地求和过程，并且在指定位置悬停。那现在我们就让时钟信号震动起来，看看这个过程吧。（此处只留关键组件） </p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTqC7P9cNhm3FWp1vIgzictn4OPbS9oqHU8PjPYZQbvrZ4xmPwty6NXFVbIoUjBDY4XIM74DAwmNlg/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>这个控制单元该怎么实现呢？我们知道，只要给出输入，给出输出，任何组件都可以造出来。本文就不再展开了。 </p>
+<p>有了三个指令，我们知道了通过指令这种方式，配合各种复杂的控制器，即可实现将所有操作统统自动化。</p>
+<p>接下来我们需要做的，就是设计控制器，以及约定好一大堆指令，使得通过这一大堆指令的排列组合，可以实现任何自动化的计算操作。 </p>
+<p>我们将设计好的一大堆指令</p>
+<p>称作<strong>指令集</strong></p>
+<p>我们将指令排列组合后可以实现的功能</p>
+<p>称作<strong>程序</strong></p>
+<p>我们将指令的排列组合这个过程</p>
+<p>称作<strong>编程</strong></p>
+<p>我们将排列组合这些指令的人</p>
+<p>称作<strong>程序员</strong></p>
+<p>而我们将承载这一切的装置，叫做什么呢？</p>
+<p>没错，这个破玩意，就是计算机</p>
+<h2 id="2-网络（TCP）"><a href="#2-网络（TCP）" class="headerlink" title="2.网络（TCP）"></a>2.网络（TCP）</h2><p>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/MXHouvWLBsm7hqHUUjJaEw">https://mp.weixin.qq.com/s/MXHouvWLBsm7hqHUUjJaEw</a></p>
+<p>你是一台电脑，你的名字叫 A</p>
+<p>很久很久之前，你不与任何其他电脑相连接，孤苦伶仃。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCkxx0Ymmxgv0qjfOaOrya1aI11anJm358nhRbRyc6mSkBrib0GvBZuUQ/640?wx_fmt=png&wxfrom=13&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>直到有一天，你希望与另一台电脑 B 建立通信，于是你们各开了一个网口，用一根<strong>网线</strong>连接了起来。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCRoZfleL5bQyEz1I5KZ0mEMibjGqBVIicdtHibwCwJeaia7DyS627DAKIibA/640?wx_fmt=png&wxfrom=13&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>用一根网线连接起来怎么就能”通信”了呢？我可以给你讲 IO、讲中断、讲缓冲区，但这不是研究网络时该关心的问题。</p>
+<p>如果你纠结，要么去研究一下操作系统是如何处理网络 IO 的，要么去研究一下包是如何被网卡转换成电信号发送出去的，要么就仅仅把它当做电脑里有个小人在<strong>开枪</strong>吧~</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTFXnSdksTicclQTOX582DoCrYnicXVEFB08yAx2BZzLkysFuWL5FibvYcWcfp0GzPsXx1abuZUCtd7g/640?wx_fmt=gif&wxfrom=13&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>反正，你们就是连起来了，并且可以通信。</p>
+<h3 id="1-第一层：集线器、mac地址"><a href="#1-第一层：集线器、mac地址" class="headerlink" title="1.第一层：集线器、mac地址"></a>1.第一层：集线器、mac地址</h3><p>有一天，一个新伙伴 C 加入了，但聪明的你们很快发现，可以每个人开<strong>两个网口</strong>，用一共<strong>三根网线</strong>，彼此相连。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCEzqO0hrYNkJ9cAvZ5icUAAW9vWC6AslUvogKzpfLbytMw3Lj5ibUCwqg/640?wx_fmt=png&wxfrom=13&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>随着越来越多的人加入，你发现身上开的网口实在太多了，而且网线密密麻麻，混乱不堪。（而实际上一台电脑根本开不了这么多网口，所以这种连线只在理论上可行，所以连不上的我就用红色虚线表示了，就是这么严谨哈哈~）</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUxKgLPfUANW7KwruqniacE5p9399ia7yriaIcCq8nyMoayQjoEsVKwDia8A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>于是你们发明了一个中间设备，你们将网线都插到这个设备上，由这个设备做转发，就可以彼此之间通信了，本质上和原来一样，只不过网口的数量和网线的数量减少了，不再那么混乱。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCJPxRdhzQZIic13m4t7K5W0MsRLhNASgZ4kWqZJQaZTibFL80jpLWYDicg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>你给它取名叫<strong>集线器</strong>，它仅仅是无脑将电信号<strong>转发到所有出口（广播）</strong>，不做任何处理，你觉得它是没有智商的，因此把人家定性在了<strong>物理层</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTFXnSdksTicclQTOX582DoCicNkrpXL7pVT3bPzWXxBxAb0BROicQatvveWgtLZsuSFRAZKn0EjGWOA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>由于转发到了所有出口，那 BCDE 四台机器怎么知道数据包是不是发给自己的呢？</p>
+<p>首先，你要给所有的连接到集线器的设备，都起个名字。原来你们叫 ABCD，但现在需要一个更专业的，<strong>全局唯一</strong>的名字作为标识，你把这个更高端的名字称为 <strong>MAC 地址</strong>。</p>
+<p>你的 MAC 地址是 aa-aa-aa-aa-aa-aa，你的伙伴 b 的 MAC 地址是 bb-bb-bb-bb-bb-bb，以此类推，不重复就好。</p>
+<p>这样，A 在发送数据包给 B 时，只要在头部拼接一个这样结构的数据，就可以了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW621evwwYQ4HGSB5sH0wIicoGxpRhuu0pn3sGLqCzIiciboPo6EJ2K2v1baA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个数据包的确是发给自己的，于是便<strong>收下</strong>。</p>
+<p>其他的 CDE 收到数据包后，根据头部的目标 MAC 地址信息，判断这个数据包并不是发给自己的，于是便<strong>丢弃</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUl92YUvqpCPvQDMRm2mnVUiccD6zUVhzJp9Ut5qetr0Le1d0rtnSw59A/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>虽然集线器使整个布局干净不少，但原来我只要发给电脑 B 的消息，现在却要发给连接到集线器中的所有电脑，这样既不安全，又不节省网络资源。</p>
+<h3 id="2-第二层：数据链路层、交换机"><a href="#2-第二层：数据链路层、交换机" class="headerlink" title="2.第二层：数据链路层、交换机"></a>2.第二层：数据链路层、交换机</h3><p>如果把这个集线器弄得更智能一些，<strong>只发给目标 MAC 地址指向的那台电脑</strong>，就好了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUaS3FORjib7sYG4vKJJPOhb6Kjv8xpH7V2NZSa8wuj6bJceLegIee2cQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>虽然只比集线器多了这一点点区别，但看起来似乎有智能了，你把这东西叫做<strong>交换机</strong>。也正因为这一点点智能，你把它放在了另一个层级，<strong>数据链路层</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCCpxm2Iv4cB2eW01hpmoPk2RttwCw28H2urdSfP66RNIar7siaMKTAHg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>如上图所示，你是这样设计的。</p>
+<p>交换机内部维护一张 <strong>MAC 地址表</strong>，记录着每一个 MAC 地址的设备，连接在其哪一个端口上。</p>
+<table>
+<thead>
+<tr>
+<th align="center">MAC 地址</th>
+<th align="center">端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">bb-bb-bb-bb-bb-bb</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">cc-cc-cc-cc-cc-cc</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">aa-aa-aa-aa-aa-aa</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">dd-dd-dd-dd-dd-dd</td>
+<td align="center">5</td>
+</tr>
+</tbody></table>
+<p>假如你仍然要发给 B 一个数据包，构造了如下的数据结构从网口出去。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW621evwwYQ4HGSB5sH0wIicoGxpRhuu0pn3sGLqCzIiciboPo6EJ2K2v1baA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>到达交换机时，交换机内部通过自己维护的 MAC 地址表，发现<strong>目标机器 B 的 MAC 地址 bb-bb-bb-bb-bb-bb 映射到了端口 1 上</strong>，于是把数据从 1 号端口发给了 B，完事~</p>
+<p>你给这个通过这样传输方式而组成的小范围的网络，叫做<strong>以太网</strong>。</p>
+<p>当然最开始的时候，MAC 地址表是空的，是怎么逐步建立起来的呢？</p>
+<p>假如在 MAC 地址表为空是，你给 B 发送了如下数据</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW621evwwYQ4HGSB5sH0wIicoGxpRhuu0pn3sGLqCzIiciboPo6EJ2K2v1baA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>由于这个包从端口 4 进入的交换机，所以此时交换机就可以在 MAC地址表记录第一条数据：</p>
+<p><strong>MAC：aa-aa-aa-aa-aa-aa-aa<br>端口：4</strong></p>
+<p>交换机看目标 MAC 地址（bb-bb-bb-bb-bb-bb）在地址表中并没有映射关系，于是将此包发给了<strong>所有端口</strong>，也即发给了所有机器。</p>
+<p>之后，只有机器 B 收到了确实是发给自己的包，于是做出了<strong>响应</strong>，响应数据从端口 1 进入交换机，于是交换机此时在地址表中更新了第二条数据：</p>
+<p><strong>MAC：bb-bb-bb-bb-bb-bb<br>端口：1</strong></p>
+<p>过程如下</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXTDPrOXlicmulCTjcL9deOvQkaodoHNwcTO5ibDLM6TIgQymoHibokkd9dVuaGuZNal0glFGgM8ib3zsw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>经过该网络中的机器不断地通信，交换机最终将 MAC 地址表建立完毕~</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/ckiaYOYicQpQQB5lS21ItkZKeYiaExH5rY5UnyS1KBCcbHEK6zJRNs6KTwYmaAQBVruo1On9EhAc3wBHXiceFIdpPg/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>随着机器数量越多，交换机的端口也不够了，但聪明的你发现，只要将多个交换机连接起来，这个问题就轻而易举搞定~</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCmQ3SttlldnkicT7qBibOibWwLq7hSFqhviad94QiaM7HrfVibzpAK3zknL8A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>你完全不需要设计额外的东西，只需要按照之前的设计和规矩来，按照上述的接线方式即可完成所有电脑的互联，所以交换机设计的这种规则，真的很巧妙。你想想看为什么（比如 A 要发数据给 F）。</p>
+<p>但是你要注意，上面那根红色的线，最终在 MAC 地址表中可不是一条记录呀，而是要把 EFGH 这四台机器与该端口（端口6）的映射全部记录在表中。</p>
+<p>最终，<strong>两个交换机将分别记录 A ~ H 所有机器的映射记录</strong>。</p>
+<p><strong>左边的交换机</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">MAC 地址</th>
+<th align="center">端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">bb-bb-bb-bb-bb-bb</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">cc-cc-cc-cc-cc-cc</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">aa-aa-aa-aa-aa-aa</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">dd-dd-dd-dd-dd-dd</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td align="center">ee-ee-ee-ee-ee-ee</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">ff-ff-ff-ff-ff-ff</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">gg-gg-gg-gg-gg-gg</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td align="center">hh-hh-hh-hh-hh-hh</td>
+<td align="center">6</td>
+</tr>
+</tbody></table>
+<p><strong>右边的交换机</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">MAC 地址</th>
+<th align="center">端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">bb-bb-bb-bb-bb-bb</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">cc-cc-cc-cc-cc-cc</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">aa-aa-aa-aa-aa-aa</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">dd-dd-dd-dd-dd-dd</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">ee-ee-ee-ee-ee-ee</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">ff-ff-ff-ff-ff-ff</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">gg-gg-gg-gg-gg-gg</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">hh-hh-hh-hh-hh-hh</td>
+<td align="center">6</td>
+</tr>
+</tbody></table>
+<p>这在只有 8 台电脑的时候还好，甚至在只有几百台电脑的时候，都还好，所以这种交换机的设计方式，已经足足支撑一阵子了。</p>
+<p>但很遗憾，人是贪婪的动物，很快，电脑的数量就发展到几千、几万、几十万。</p>
+<h3 id="3-第三层：路由器、网络层、IP地址"><a href="#3-第三层：路由器、网络层、IP地址" class="headerlink" title="3.第三层：路由器、网络层、IP地址"></a>3.第三层：路由器、网络层、IP地址</h3><p>交换机已经无法记录如此庞大的映射关系了。</p>
+<p>此时你动了歪脑筋，你发现了问题的根本在于，连出去的那根红色的网线，后面不知道有多少个设备不断地连接进来，从而使得地址表越来越大。</p>
+<p>那我可不可以让那根红色的网线，接入一个<strong>新的设备</strong>，这个设备就跟电脑一样有自己独立的 MAC 地址，而且同时还能帮我把数据包做一次<strong>转发</strong>呢？</p>
+<p>这个设备就是<strong>路由器，<strong>它的功能就是，作为一台独立的拥有 MAC 地址的设备，并且可以帮我把数据包做一次转发</strong>，<strong>你把它定在了</strong>网络层。</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUibbMdTf8L5icCJytKmb5IyXauL0xZ5qLoQ7lCoNpKKibp4wedgS3MeXPg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>注意，路由器的每一个端口，都有独立的 MAC 地址</p>
+<p>好了，现在交换机的 MAC 地址表中，只需要多出一条 MAC 地址 ABAB 与其端口的映射关系，就可以成功把数据包转交给路由器了，这条搞定。</p>
+<p>那如何做到，把发送给 C 和 D，甚至是把发送给 DEFGH…. 的数据包，统统先发送给路由器呢？</p>
+<p>不难想到这样一个点子，假如电脑 C 和 D 的 MAC 地址拥有共同的前缀，比如分别是</p>
+<p>C 的 MAC 地址：FFFF-FFFF-CCCC</p>
+<p>D 的 MAC 地址：FFFF-FFFF-DDDD</p>
+<p>那我们就可以说，将目标 MAC 地址为 <strong>FFFF-FFFF-？开头的</strong>，统统先发送给路由器。</p>
+<p>这样是否可行呢？答案是否定的。</p>
+<p>我们先从现实中 MAC 地址的结构入手，MAC地址也叫物理地址、硬件地址，长度为 48 位，一般这样来表示</p>
+<p><strong>00-16-EA-AE-3C-40</strong></p>
+<p>它是由网络设备制造商生产时烧录在网卡的EPROM（一种闪存芯片，通常可以通过程序擦写）。其中<strong>前 24 位（00-16-EA）代表网络硬件制造商的编号</strong>**，后 24 位（AE-3C-40）是该厂家自己分配的，一般表示系列号。**只要不更改自己的 MAC 地址，MAC 地址在世界是唯一的。形象地说，MAC地址就如同身份证上的身份证号码，具有唯一性。</p>
+<p>那如果你希望向上面那样表示将目标 MAC 地址为 <strong>FFFF-FFFF-？开头的</strong>，统一从路由器出去发给某一群设备（后面会提到这其实是子网的概念），那你就需要要求某一子网下统统买一个厂商制造的设备，要么你就需要要求厂商在生产网络设备烧录 MAC 地址时，提前按照你规划好的子网结构来定 MAC 地址，并且日后这个网络的结构都不能轻易改变。</p>
+<p>这显然是不现实的。</p>
+<p>于是你发明了一个新的地址，给每一台机器一个 32 位的编号，如：</p>
+<p><strong>11000000101010000000000000000001</strong></p>
+<p>你觉得有些不清晰，于是把它分成四个部分，中间用点相连。</p>
+<p><strong>11000000.10101000.00000000.00000001</strong></p>
+<p>你还觉得不清晰，于是把它转换成 10 进制。</p>
+<p><strong>192.168.0.1</strong></p>
+<p>最后你给了这个地址一个响亮的名字，<strong>IP 地址</strong>。现在每一台电脑，同时有自己的 MAC 地址，又有自己的 IP 地址，只不过 IP 地址是<strong>软件层面</strong>上的，可以随时修改，MAC 地址一般是无法修改的。</p>
+<p>这样一个可以随时修改的 IP 地址，就可以根据你规划的网络拓扑结构，来调整了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXTFXnSdksTicclQTOX582DoCxSU11uLr4pPTJbUibddTDkKyuAxPqe4mvFZIad6pPa3umHkibjsibyrTQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>如上图所示，假如我想要发送数据包给 ABCD 其中一台设备，不论哪一台，我都可以这样描述，<strong>“将 IP 地址为 192.168.0 开头的全部发送给到路由器，之后再怎么转发，交给它！”</strong>，巧妙吧。</p>
+<p>那交给路由器之后，路由器又是怎么把数据包准确转发给指定设备的呢？</p>
+<p>别急我们慢慢来。</p>
+<p>我们先给上面的组网方式中的每一台设备，加上自己的 IP 地址</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRwu8OVyPt5ezNqfrTSic3fibHFiaWQa9EDJZp6qjhsg8YDric4oiaGylFuicTyHW2jgxdKsCWfPWudxUvQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>现在两个设备之间传输，除了加上数据链路层的头部之外，还要再增加一个网络层的头部。</p>
+<p>假如 A 给 B 发送数据，由于它们直接连着交换机，所以 A 直接发出如下数据包即可，其实网络层没有体现出作用。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW62aPvbu7yEwOZKYt6vzPh4aKdDPNcITHjA5RhOBtgriaiaJuicPFrOToxMg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>但假如 A 给 C 发送数据，A 就需要先转交给路由器，然后再由路由器转交给 C。由于最底层的传输仍然需要依赖以太网，所以数据包是分成两段的。</p>
+<p>A ~ 路由器这段的包如下：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW62URcC21w1am2ZOCE7U7rVMnZlhRyyIicFkPc77N1T165IGCuqM6IV3xw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>路由器到 C 这段的包如下：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW62gmaTicjPibJ7tZJM0ib7uicXWqicFv1zGox4iaKjYlBdsTfPiaK9icqZKBeHww/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>好了，上面说的两种情况（A-&gt;B，A-&gt;C），相信细心的读者应该会有不少疑问，下面我们一个个来展开。</p>
+<h3 id="4-子网"><a href="#4-子网" class="headerlink" title="4.子网"></a>4.子网</h3><p>A 给 C 发数据包，怎么知道是否要通过路由器转发呢？</p>
+<p><strong>答案：子网</strong></p>
+<p>如果源 IP 与目的 IP 处于一个子网，直接将包通过交换机发出去。</p>
+<p>如果源 IP 与目的 IP 不处于一个子网，就交给路由器去处理。</p>
+<p>好，那现在只需要解决，什么叫处于一个子网就好了。</p>
+<ul>
+<li>192.168.0.1 和 192.168.0.2 处于同一个子网</li>
+<li>192.168.0.1 和 192.168.1.1 处于不同子网</li>
+</ul>
+<p>这两个是我们人为规定的，即我们想表示，对于 192.168.0.1 来说：</p>
+<p><strong>192.168.0.xxx 开头的，就算是在一个子网，否则就是在不同的子网。</strong></p>
+<p>那对于计算机来说，怎么表达这个意思呢？于是人们发明了<strong>子网掩码</strong>的概念</p>
+<p>假如某台机器的子网掩码定为 255.255.255.0</p>
+<p>这表示，将源 IP 与目的 IP 分别同这个子网掩码进行<strong>与运算</strong><strong>，相等则是在一个子网，不相等就是在不同子网</strong>，就这么简单。</p>
+<p>比如</p>
+<ul>
+<li><strong>A电脑</strong>：192.168.0.1 &amp; 255.255.255.0 &#x3D; 192.168.0.0</li>
+<li><strong>B电脑</strong>：192.168.0.2 &amp; 255.255.255.0 &#x3D; 192.168.0.0</li>
+<li><strong>C电脑</strong>：192.168.1.1 &amp; 255.255.255.0 &#x3D; 192.168.1.0</li>
+<li><strong>D电脑</strong>：192.168.1.2 &amp; 255.255.255.0 &#x3D; 192.168.1.0</li>
+</ul>
+<p>那么 A 与 B 在同一个子网，C 与 D 在同一个子网，但是 A 与 C 就不在同一个子网，与 D 也不在同一个子网，以此类推。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW62DUpFaCKYNJS4bq4XcibHOfP7slGzlPmVLJleuQAKmhVSdsfPXnfFvMA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>所以如果 A 给 C 发消息，A 和 C 的 IP 地址分别 &amp; A 机器配置的子网掩码，发现不相等，则 A 认为 C 和自己不在同一个子网，于是把包发给路由器，就不管了，<strong>之后怎么转发，A 不关心</strong>。</p>
+<h3 id="5-默认网关"><a href="#5-默认网关" class="headerlink" title="5.默认网关"></a>5.默认网关</h3><p>A 如何知道，哪个设备是路由器？</p>
+<p><strong>答案：在 A 上要设置默认网关</strong></p>
+<p>上一步 A 通过是否与 C 在同一个子网内，判断出自己应该把包发给路由器，那路由器的 IP 是多少呢？</p>
+<p>其实说发给路由器不准确，应该说 A 会把包发给<strong>默认网关</strong>。</p>
+<p>对 A 来说，A 只能<strong>直接</strong>把包发给同处于一个子网下的某个 IP 上，所以发给路由器还是发给某个电脑，对 A 来说也不关心，只要这个设备有个 IP 地址就行。</p>
+<p>所以<strong>默认网关，就是 A 在自己电脑里配置的一个 IP 地址</strong>，以便在发给不同子网的机器时，发给这个 IP 地址。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW6285rxNapFpZuzsDYwicEqEKLiaKP7GJyZwv6llbf1BicLhLEQnUHY7WoEQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>仅此而已！</p>
+<h3 id="6-路由表"><a href="#6-路由表" class="headerlink" title="6.路由表"></a>6.路由表</h3><p>路由器如何知道C在哪里？</p>
+<p><strong>答案：路由表</strong></p>
+<p>现在 A 要给 C 发数据包，已经可以成功发到路由器这里了，最后一个问题就是，<strong>路由器怎么知道，收到的这个数据包，该从自己的哪个端口出去</strong>，才能直接（或间接）地最终到达目的地 C 呢。</p>
+<p>路由器收到的数据包有目的 IP 也就是 C 的 IP 地址，需要转化成从自己的哪个端口出去，很容易想到，应该有个表，就像 MAC 地址表一样。</p>
+<p>这个表就叫<strong>路由表</strong>。</p>
+<p>至于这个路由表是怎么出来的，有很多路由算法，本文不展开，因为我也不会哈哈~</p>
+<p>不同于 MAC 地址表的是，路由表并不是一对一这种明确关系，我们下面看一个路由表的结构。</p>
+<table>
+<thead>
+<tr>
+<th align="center">目的地址</th>
+<th align="center">子网掩码</th>
+<th align="center">下一跳</th>
+<th align="center">端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">192.168.0.0</td>
+<td align="center">255.255.255.0</td>
+<td align="center"></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">192.168.0.254</td>
+<td align="center">255.255.255.255</td>
+<td align="center"></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">192.168.1.0</td>
+<td align="center">255.255.255.0</td>
+<td align="center"></td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">192.168.1.254</td>
+<td align="center">255.255.255.255</td>
+<td align="center"></td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<p>我们学习一种新的表示方法，由于子网掩码其实就表示前多少位表示子网的网段，所以如 192.168.0.0（255.255.255.0） 也可以简写为 192.168.0.0&#x2F;24</p>
+<table>
+<thead>
+<tr>
+<th align="center">目的地址</th>
+<th align="center">下一跳</th>
+<th align="center">端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">192.168.0.0&#x2F;24</td>
+<td align="center"></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">192.168.0.254&#x2F;32</td>
+<td align="center"></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">192.168.1.0&#x2F;24</td>
+<td align="center"></td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">192.168.1.254&#x2F;32</td>
+<td align="center"></td>
+<td align="center">1</td>
+</tr>
+</tbody></table>
+<p>这就很好理解了，路由表就表示，<strong>192.168.0.xxx 这个子网下的，都转发到 0 号端口，192.168.1.xxx 这个子网下的，都转发到 1 号端口</strong>。下一跳列还没有值，我们先不管</p>
+<p>配合着结构图来看（这里把子网掩码和默认网关都补齐了）图中 &amp; 笔误，结果应该是 .0</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXS8pNwB4IrqPBOVibO9bMW625LJuoF7uV1GvibJSZ0pg8iaeMxycSYXRqgibJDDibL8vRftuG5tlfqjf8A/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<h3 id="7-IP地址和MAC地址"><a href="#7-IP地址和MAC地址" class="headerlink" title="7.IP地址和MAC地址"></a>7.IP地址和MAC地址</h3><p>刚才说的都是 IP 层，但发送数据包的数据链路层需要知道 MAC 地址，可是我只知道 IP 地址该怎么办呢？</p>
+<p><strong>答案：arp</strong></p>
+<p>假如你（A）此时<strong>不知道</strong>你同伴 B 的 MAC 地址（现实中就是不知道的，刚刚我们只是假设已知），你只知道它的 IP 地址，你该怎么把数据包准确传给 B 呢？</p>
+<p>答案很简单，在网络层，<strong>我需要把 IP 地址对应的 MAC 地址找到</strong>，也就是通过某种方式，找到 <strong>192.168.0.2</strong> 对应的 MAC 地址 <strong>BBBB</strong>。</p>
+<p>这种方式就是 <strong>arp 协议</strong>，同时电脑 A 和 B 里面也会有一张 <strong>arp 缓存表</strong>，表中记录着 <strong>IP 与 MAC 地址</strong>的对应关系。</p>
+<table>
+<thead>
+<tr>
+<th align="center">IP 地址</th>
+<th align="center">MAC 地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">192.168.0.2</td>
+<td align="center">BBBB</td>
+</tr>
+</tbody></table>
+<p>一开始的时候这个表是<strong>空的</strong>，电脑 A 为了知道电脑 B（192.168.0.2）的 MAC 地址，将会<strong>广播</strong>一条 arp 请求，B 收到请求后，带上自己的 MAC 地址给 A 一个<strong>响应</strong>。此时 A 便更新了自己的 arp 表。</p>
+<p>这样通过大家不断广播 arp 请求，最终所有电脑里面都将 arp 缓存表更新完整。</p>
+<h3 id="8-总结一下"><a href="#8-总结一下" class="headerlink" title="8.总结一下"></a>8.总结一下</h3><p>好了，总结一下，到目前为止就几条规则</p>
+<p><strong>从各个节点的视角来看</strong></p>
+<p><strong>电脑视角</strong>：</p>
+<ul>
+<li>首先我要知道我的 IP 以及对方的 IP</li>
+<li>通过子网掩码判断我们是否在同一个子网</li>
+<li>在同一个子网就通过 arp 获取对方 mac 地址直接扔出去</li>
+<li>不在同一个子网就通过 arp 获取默认网关的 mac 地址直接扔出去</li>
+</ul>
+<p><strong>交换机视角：</strong></p>
+<ul>
+<li>我收到的数据包必须有目标 MAC 地址</li>
+<li>通过 MAC 地址表查映射关系</li>
+<li>查到了就按照映射关系从我的指定端口发出去</li>
+<li>查不到就所有端口都发出去</li>
+</ul>
+<p><strong>路由器视角：</strong></p>
+<ul>
+<li>我收到的数据包必须有目标 IP 地址</li>
+<li>通过路由表查映射关系</li>
+<li>查到了就按照映射关系从我的指定端口发出去（不在任何一个子网范围，走其路由器的默认网关也是查到了）</li>
+<li>查不到则返回一个路由不可达的数据包</li>
+</ul>
+<p>如果你嗅觉足够敏锐，你应该可以感受到下面这句话：</p>
+<p>网络层（IP协议）本身没有传输包的功能，包的实际传输是委托给数据链路层（以太网中的交换机）来实现的。</p>
+<p><strong>涉及到的三张表分别是</strong></p>
+<ul>
+<li>交换机中有 <strong>MAC 地址</strong>表用于映射 MAC 地址和它的端口</li>
+<li>路由器中有<strong>路由表</strong>用于映射 IP 地址(段)和它的端口</li>
+<li>电脑和路由器中都有 <strong>arp 缓存表</strong>用于缓存 IP 和 MAC 地址的映射关系</li>
+</ul>
+<p><strong>这三张表是怎么来的</strong></p>
+<ul>
+<li>MAC 地址表是通过以太网内各节点之间不断通过交换机通信，不断完善起来的。</li>
+<li>路由表是各种路由算法 + 人工配置逐步完善起来的。</li>
+<li>arp 缓存表是不断通过 arp 协议的请求逐步完善起来的。</li>
+</ul>
+<p>知道了以上这些，目前网络上两个节点是如何发送数据包的这个过程，就完全可以解释通了！</p>
+<h3 id="9-第四层：传输层"><a href="#9-第四层：传输层" class="headerlink" title="9.第四层：传输层"></a>9.第四层：传输层</h3><p>那接下来我们 <strong>趁热打铁</strong> 一下，请做好 <strong>战斗</strong> 准备！</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRwu8OVyPt5ezNqfrTSic3fib2mUgmE3Eskh1sAAhoz4u1TcbMmB5k1U2T08GILf1ubC3lDAPnIaicKQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>这时路由器 1 连接了路由器 2，所以其路由表有了下一条地址这一个概念，所以它的路由表就变成了这个样子。如果匹配到了有下一跳地址的一项，则需要再次匹配，找到其端口，并找到下一跳 IP 的 MAC 地址。</p>
+<p>也就是说找来找去，最终必须能映射到一个端口号，然后从这个端口号把数据包发出去。</p>
+<table>
+<thead>
+<tr>
+<th align="center">目的地址</th>
+<th align="center">下一跳</th>
+<th align="center">端口</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">192.168.0.0&#x2F;24</td>
+<td align="center"></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">192.168.0.254&#x2F;32</td>
+<td align="center"></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">192.168.1.0&#x2F;24</td>
+<td align="center"></td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">192.168.1.254&#x2F;32</td>
+<td align="center"></td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">192.168.2.0&#x2F;24</td>
+<td align="center">192.168.100.5</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">192.168.100.0&#x2F;24</td>
+<td align="center"></td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">192.168.100.4&#x2F;32</td>
+<td align="center"></td>
+<td align="center">2</td>
+</tr>
+</tbody></table>
+<p><strong>这时如果 A 给 F 发送一个数据包，能不能通呢？如果通的话整个过程是怎样的呢？</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUx1JOzx3EUFX66xFrEzxw9DaDho6tb8paPkhIwXTLENRJ5yU0y7NoYw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>思考一分钟…</p>
+<p><strong>详细过程动画描述：</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXQx9EiaWwmE0kby98Qg4naDUZ1ynpXjWpEwYvdjGVcQcARHGbQrzgwj3Jnk54CfnNXhGCiavAZKrgsw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p><strong>详细过程文字描述：</strong></p>
+<p><strong>1.</strong> 首先 A（192.168.0.1）通过子网掩码（255.255.255.0）计算出自己与 F（192.168.2.2）并不在同一个子网内，于是决定发送给默认网关（192.168.0.254）</p>
+<p><strong>2.</strong> A 通过 ARP 找到 默认网关 192.168.0.254 的 MAC 地址。</p>
+<p><strong>3.</strong> A 将源 MAC 地址（AAAA）与网关 MAC 地址（ABAB）封装在数据链路层头部，又将源 IP 地址（192.168.0.1）和目的 IP 地址（192.168.2.2）（注意这里千万不要以为填写的是默认网关的 IP 地址，从始至终这个数据包的两个 IP 地址都是不变的，只有 MAC 地址在不断变化）封装在网络层头部，然后发包</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW62sTtLgGGYfzpl5Jx1JaEjKyAGfK3z60p4FJEfhNiaL1jqtaBTKibGD7icQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p><strong>4.</strong> 交换机 1 收到数据包后，发现目标 MAC 地址是 ABAB，转发给路由器1</p>
+<p><strong>5.</strong> 数据包来到了路由器 1，发现其目标 IP 地址是 192.168.2.2，查看其路由表，发现了下一跳的地址是 192.168.100.5</p>
+<p><strong>6.</strong> 所以此时路由器 1 需要做两件事，第一件是再次匹配路由表，发现匹配到了端口为 2，于是将其封装到数据链路层，最后把包从 2 号口发出去。</p>
+<p><strong>7.</strong> 此时路由器 2 收到了数据包，看到其目的地址是 192.168.2.2，查询其路由表，匹配到端口号为 1，准备从 1 号口把数据包送出去。</p>
+<p><strong>8.</strong> 但此时路由器 2 需要知道 192.168.2.2 的 MAC 地址了，于是查看其 arp 缓存，找到其 MAC 地址为 FFFF，将其封装在数据链路层头部，并从 1 号端口把包发出去。</p>
+<p><strong>9.</strong> 交换机 3 收到了数据包，发现目的 MAC 地址为 FFFF，查询其 MAC 地址表，发现应该从其 6 号端口出去，于是从 6 号端口把数据包发出去。</p>
+<p><strong>10.</strong> **F 最终收到了数据包！**并且发现目的 MAC 地址就是自己，于是收下了这个包</p>
+<p><strong>更详细且精准的过程：</strong></p>
+<p>读到这相信大家已经很累了，理解上述过程基本上网络层以下的部分主流程就基本疏通了，如果你想要本过程更为专业的过程描述，可以在公众号”无聊的闪客”后台回复”网络”，获得我模拟这个过程的 Cisco Packet Tracer 源文件。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW623ic3nTGSqr5aIrxbZGI81cmKQdEEiaXhPVk9ocsm5Gib7biaowwYN9iaH3A/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>每一步包的传输都会有各层的原始数据，以及专业的过程描述</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXS8pNwB4IrqPBOVibO9bMW62cweHBmF8ZO0icGxyRRxCzrCxlckbluPrjO7ABQm7r872LNyOGoq4hOg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>同时在此基础之上你也可以设计自己的网络拓扑结构，进行各种实验，来加深网络传输过程的理解。</p>
+<p><strong>你是不是以为到这里就结束了？</strong></p>
+<p><strong>不，好戏才刚刚开始！</strong></p>
+<p><strong>请休息一分钟，我们继续战斗！</strong></p>
+<p>j经过刚刚的一番折腾，只要你知道另一位伙伴 B 的 IP 地址，且你们之间的网络是通的，无论多远，你都可以将一个数据包发送给你的伙伴 B</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uGg6mZSFxenHTCuVkrsKibicOOq6GchqBw2zvlLq25CH0RUm1sAZ2IC4g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>这就是物理层、数据链路层、网络层这三层所做的事情。</p>
+<p>站在第四层的你，就可以不要脸地利用下三层所做的铺垫，随心所欲地发送数据，而不必担心找不到对方了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uUzbtZStJRCNuJ65iaw1ecia9V9uUv7D82OP1qPoU0WgGlnciaplkptrIg/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>虽然你此时还什么都没干，但你还是给自己这一层起了个响亮的名字，叫做<strong>传输层</strong>。</p>
+<p>你本以为自己所在的第四层万事大吉，啥事没有，但很快问题就接踵而至。</p>
+<p>问题来了~   </p>
+<p>前三层协议只能把数据包从一个主机搬到另外一台主机，但是，到了目的地以后，数据包具体交给哪个<strong>程序</strong>（进程）呢？</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRRr0taZIyx3pxsoyuia1c5ulEz2mGic1srDTvicfb6YBLpcB9MUs70zfd4loqIDApY2lDR09ZQ9LUuw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>所以，你需要把通信的进程区分开来，于是就给每个进程分配一个数字编号，你给它起了一个响亮的名字：<strong>端口号</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uMBoTZjSbmcQicLRB1XIEtO3wy33sFMZic5HibucXJJELBIYDNxhcR73lw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>然后你在要发送的数据包上，增加了传输层的头部，<strong>源端口号</strong>与<strong>目标端口号</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uEys9QwJJMED58ibhmfAf0SYxXPHZsmibPeNgxtSJibzAS8KzlQEPjQAww/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>OK，这样你将原本主机到主机的通信，升级为了<strong>进程和进程之间的通信</strong>。</p>
+<p>你没有意识到，你不知不觉实现了 <strong>UDP 协议</strong>！</p>
+<p>（当然 UDP 协议中不光有源端口和目标端口，还有数据包长度和校验值，我们暂且略过）</p>
+<p>就这样，你用 UDP 协议无忧无虑地同 B 进行着通信，一直没发生什么问题。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uaoYXjnWd2wNx3DUFY0H1aDjgpqXp7jvc8yb7uLWnS8LmzXVwcXcDYA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>但很快，你发现事情变得非常复杂……</p>
+<h3 id="10-丢包问题"><a href="#10-丢包问题" class="headerlink" title="10 .丢包问题"></a>10 .丢包问题</h3><p>由于网络的不可靠，数据包可能在半路丢失，而 A 和 B 却无法察觉。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5u1QdibZVFJMh9lWgAUkF3to2dl9ISx9GjY0ZrsXjicQdjPUYIiakRRgdng/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>对于丢包问题，只要解决两个事就好了。</p>
+<p><strong>第一个，A 怎么知道包丢了？</strong></p>
+<p>答案：让 B 告诉 A</p>
+<p><strong>第二个，丢了的包怎么办？</strong></p>
+<p>答案：重传</p>
+<p>于是你设计了如下方案，A 每发一个包，都必须收到来自 B 的<strong>确认</strong>（ACK），再发下一个，否则在一定时间内没有收到确认，就<strong>重传</strong>这个包。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uPicHiamlp4AZpWLfl5ibLG43M8Pdhiak93mqIAWwFpdn7zV3wbhHJl4BOw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>你管它叫<strong>停止等待协议</strong>。只要按照这个协议来，虽然 A 无法保证 B 一定能收到包，但 A 能够确认 B 是否收到了包，收不到就重试，尽最大努力让这个通信过程变得可靠，于是你们现在的通信过程又有了一个新的特征，<strong>可靠交付</strong>。</p>
+<h3 id="11-效率问题"><a href="#11-效率问题" class="headerlink" title="11.效率问题"></a>11.效率问题</h3><p>停止等待虽然能解决问题，但是效率太低了，A 原本可以在发完第一个数据包之后立刻开始发第二个数据包，但由于停止等待协议，A 必须等数据包到达了 B ，且 B 的 ACK 包又回到了 A，才可以继续发第二个数据包，这效率慢得可不是一点两点。</p>
+<p>于是你对这个过程进行了改进，采用<strong>流水线</strong>的方式，不再傻傻地等。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5ux5buWickntcmwSq9WZfZfna02YVE7v5pibwib0VnX1LWWKVks5jgs24UA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<h3 id="12-顺序问题"><a href="#12-顺序问题" class="headerlink" title="12. 顺序问题"></a>12. 顺序问题</h3><p>但是网路是复杂的、不可靠的。</p>
+<p>有的时候 A 发出去的数据包，分别走了不同的路由到达 B，可能无法保证和发送数据包时一样的顺序。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5u8e8WfXDWHAibcVjmNOLAoPxAx6g0co0N9ialyVr5aSRYlxbWiajIibjZiaQ/640?wx_fmt=gif&tp=wxpic&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>在流水线中有多个数据包和ACK包在<strong>乱序流动</strong>，他们之间对应关系就乱掉了。</p>
+<p>难道还回到停止等待协议？A 每收到一个包的确认（ACK）再发下一个包，那就根本不存在顺序问题。应该有更好的办法！</p>
+<p>A 在发送的数据包中增加一个<strong>序号</strong>（seq），同时 B 要在 ACK 包上增加一个<strong>确认号</strong>（ack），这样不但解决了停止等待协议的效率问题，也通过这样标序号的方式解决了顺序问题。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uePhLOULLu5BbR10rFp9Z1ic381jH8h8yE90dOfd3TentbgiahKZbibiaSA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>而 B 这个确认号意味深长：比如 B 发了一个确认号为 ack &#x3D; 3，它不仅仅表示 A 发送的序号为 2 的包收到了，还表示 2 之前的数据包都收到了。这种方式叫<strong>累计确认</strong>或<strong>累计应答</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5u6rr0YStTXMtjDOnXPIicb9ZRjPn90DLLibicYXz6y7CaD3pMdhE0MCIKg/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>注意，实际上 ack 的号是收到的最后一个数据包的序号 seq + 1，也就是告诉对方下一个应该发的序号是多少。但图中为了便于理解，ack 就表示收到的那个序号，不必纠结。</p>
+<h3 id="13-流量问题"><a href="#13-流量问题" class="headerlink" title="13.流量问题"></a>13.流量问题</h3><p>有的时候，A 发送数据包的速度太快，而 B 的接收能力不够，但 B 却没有告知 A 这个情况。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5up8VVb1ICHRWHiaDYDaMcsGCM91ubbaccrNH9gPQxKxDRuFMJ7WuJczA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>怎么解决呢？</p>
+<p>很简单，B 告诉 A 自己的接收能力，A 根据 B 的接收能力，相应控制自己的<strong>发送速率</strong>，就好了。</p>
+<p>B 怎么告诉 A 呢？B 跟 A 说”我很强”这三个字么？那肯定不行，得有一个严谨的规范。</p>
+<p>于是 B 决定，每次发送数据包给 A 时，顺带传过来一个值，叫<strong>窗口大小</strong>（win)，这个值就表示 B 的<strong>接收能力</strong>。同理，每次 A 给 B 发包时也带上自己的窗口大小，表示 A 的接收能力。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5u0USWUCZ37o6JcGsD8HETqMtB4jMdMqnTplXhmcBIOconwfwOwQoiaew/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>B 告诉了 A 自己的窗口大小值，A 怎么利用它去做 A 这边发包的流量控制呢？</p>
+<p>很简单，假如 B 给 A 传过来的窗口大小 win &#x3D; 5，那 A 根据这个值，把自己要发送的数据分成这么几类。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uic3P0cv7nXKtEVP92yvvT3dymLF67eGpibuoiabr1hcCib6jUOVvYazwOQ/640?wx_fmt=png&tp=wxpic&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>图片过于清晰，就不再文字解释了。</p>
+<p>当 A 不断发送数据包时，<strong>已发送的最后一个序号</strong>就往右移动，直到碰到了窗口的上边界，此时 A 就无法继续发包，达到了流量控制。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5ut1P6R45jbkbXv3AVib4YhtvlzQK2TBiafYEpMK4kDd6z5LzxRib5QRFAw/640?wx_fmt=gif&tp=wxpic&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>但是当 A 不断发包的同时，A 也会收到来自 B 的确认包，此时<strong>整个窗口</strong>会往右移动，因此上边界也往右移动，A 就能发更多的数据包了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uVZSgUovX9Np5nBPHW1Xzy0BpVAh4yWQRCwBdnescHeZZ2NE2Kro6Wg/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>以上都是在窗口大小不变的情况下，而 B 在发给 A 的 ACK 包中，每一个都可以<strong>重新设置</strong>一个新的窗口大小，如果 A 收到了一个新的窗口大小值，A 会随之调整。</p>
+<p>如果 A 收到了比原窗口值更大的窗口大小，比如 win &#x3D; 6，则 A 会直接将窗口上边界向右移动 1 个单位。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5u6EKcBw1qdxRXE5icLiaVqcxLhJiaM9VsiabWibFtmtTwjCsngRvH6HK8zRA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>如果 A 收到了比原窗口值小的窗口大小，比如 win &#x3D; 4，则 A 暂时不会改变窗口大小，更不会将窗口上边界向左移动，而是等着 ACK 的到来，不断将左边界向右移动，直到窗口大小值收缩到新大小为止。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5u2xTwR7YZMxFcGf609TmGiaBZpsetQY6tGhNpGNWLyJvgjOPZpXibeWQQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>OK，终于将流量控制问题解决得差不多了，你看着上面一个个小动图，给这个窗口起了一个更生动的名字，<strong>滑动窗口</strong>。</p>
+<h3 id="14-拥塞问题"><a href="#14-拥塞问题" class="headerlink" title="14. 拥塞问题"></a>14. 拥塞问题</h3><p>但有的时候，不是 B 的接受能力不够，而是网络不太好，造成了<strong>网络拥塞</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uOCO484zdmNPyxXPYTejTIdvH3wT8jdaJvUJLtvW7whicFbclLxbM9eA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>拥塞控制与流量控制有些像，但流量控制是受 B 的接收能力影响，而拥塞控制是受<strong>网络环境</strong>的影响。</p>
+<p>拥塞控制的解决办法依然是通过设置一定的窗口大小，只不过，流量控制的窗口大小是 B 直接告诉 A 的，而拥塞控制的窗口大小按理说就应该是网络环境主动告诉 A。</p>
+<p>但网络环境怎么可能主动告诉 A 呢？只能 A 单方面通过<strong>试探</strong>，不断感知网络环境的好坏，进而确定自己的拥塞窗口的大小。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uaoFvUia5aDwWk5OH2r1IiaiaM870gxy0U4dic5WelO9Q1ibEicTc1WZG22kw/640?wx_fmt=gif&tp=wxpic&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>拥塞窗口大小的计算有很多复杂的算法，就不在本文中展开了，假如<strong>拥塞窗口的大小为  cwnd</strong>，上一部分流量控制的<strong>滑动窗口的大小为 rwnd</strong>，那么窗口的右边界受这两个值共同的影响，需要取它俩的最小值。</p>
+<p><strong>窗口大小 &#x3D; min(cwnd, rwnd)</strong></p>
+<p>含义很容易理解，当 B 的接受能力比较差时，即使网络非常通畅，A 也需要根据 B 的接收能力限制自己的发送窗口。当网络环境比较差时，即使 B 有很强的接收能力，A 也要根据网络的拥塞情况来限制自己的发送窗口。正所谓受其<strong>短板</strong>的影响嘛~</p>
+<h3 id="15-连接问题"><a href="#15-连接问题" class="headerlink" title="15.连接问题"></a>15.连接问题</h3><p>有的时候，B 主机的相应进程还没有准备好或是挂掉了，A 就开始发送数据包，导致了浪费。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5ugT1W7HRSmcbSSwXDbJkCFwOrJgO6RUDib3FVLBaI3mMU4rDth4gibwgA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>这个问题在于，A 在跟 B 通信之前，没有事先确认 B 是否已经准备好，就开始发了一连串的信息。就好比你和另一个人打电话，你还没有”喂”一下确认对方有没有在听，你就巴拉巴拉说了一堆。</p>
+<p>这个问题该怎么解决呢？</p>
+<p>地球人都知道，<strong>三次握手</strong>嘛！</p>
+<p>A：我准备好了(SYN)</p>
+<p>B：我知道了(ACK)，我也准备好了(SYN)</p>
+<p>A：我知道了(ACK)</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5u0c2L6icFT0CyHd0Tc0ibmC7EnFg3Ey41U2veIaow9vSibmZD4pb50y54g/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<p>A 与 B 各自在内存中维护着自己的状态变量，三次握手之后，双方的状态都变成了<strong>连接已建立</strong>（ESTABLISHED）。</p>
+<p>虽然就只是发了三次数据包，并且在各自的内存中维护了状态变量，但这么说总觉得太 low，你看这个过程相当于双方建立连接的过程，于是你灵机一动，就叫它<strong>面向连接</strong>吧。</p>
+<p>注意：这个连接是虚拟的，是由 A 和 B 这两个终端共同维护的，在网络中的设备根本就不知道连接这回事儿！</p>
+<p>但凡事有始就有终，有了建立连接的过程，就要考虑释放连接的过程，又是地球人都知道，<strong>四次挥手</strong>嘛！</p>
+<p>A：再见，我要关闭了(FIN)</p>
+<p>B：我知道了(ACK)</p>
+<p>   给 B 一段时间把自己的事情处理完…</p>
+<p>B：再见，我要关闭了(FIN)</p>
+<p>A：我知道了(ACK)</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRRr0taZIyx3pxsoyuia1c5usyQE3j0u3HBnAnIQU0vMhUqbdrnlQoclx3JcoaVcef0xlxc437TmqA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&tp=wxpic" alt="图片"></p>
+<h3 id="16-总结"><a href="#16-总结" class="headerlink" title="16.总结"></a>16.总结</h3><p>以上讲述的，就是 TCP 协议的核心思想，上面过程中需要传输的信息，就体现在 TCP 协议的头部，这里放上最常见的 TCP 协议头解读的图。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRRr0taZIyx3pxsoyuia1c5ul4bmQic8Hca0NBLCaVwuYAmmxWsDmH1bLcVictH0Nfiayia9ibAyvfGbS7Q/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>不知道你现在再看下面这句话，是否能理解：</p>
+<p><strong>TCP 是</strong></p>
+<p><strong>面向连接的、可靠的、基于字节流的</strong></p>
+<p><strong>传输层通信协议</strong></p>
+<p>面向连接、可靠，这两个词通过上面的讲述很容易理解，那什么叫做基于字节流呢？</p>
+<p>很简单，TCP 在建立连接时，需要告诉对方 MSS（最大报文段大小）。</p>
+<p>也就是说，如果要发送的数据很大，在 TCP 层是需要按照 MSS 来切割成一个个的 <strong>TCP 报文段</strong> 的。</p>
+<p>切割的时候我才不管你原来的数据表示什么意思，需要在哪里断句啥的，我就把它当成一串毫无意义的字节，在我想要切割的地方咔嚓就来一刀，标上序号，只要接收方再根据这个序号拼成最终想要的完整数据就行了。</p>
+<p>在我 TCP 传输这里，我就把它当做一个个的<strong>字节</strong>，也就是基于字节流的含义了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRRr0taZIyx3pxsoyuia1c5uBxhzznrA9Bn2ecGdBYdu7uhbcW9kmHjrpQUnoKOicyc9ibglIGibzpTNA/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1&tp=wxpic" alt="图片"></p>
+<p>最后留给大家一个作业，模拟 A 与 B 建立一个 TCP 连接。</p>
+<p><strong>第一题</strong>：A 给 B 发送 “aaa” ，然后 B 给 A 回复一个简单的字符串 “success”，并将此过程抓包。</p>
+<p><strong>第二题</strong>：A 给 B 发送 “aaaaaa … a” 超过最大报文段大小，然后 B 给 A 回复一个简单的字符串 “success”，并将此过程抓包。</p>
+<p>下面是我抓的包（第二题）</p>
+<p><strong>三次握手阶段</strong></p>
+<p>A -&gt; B [SYN] Seq&#x3D;0 Win&#x3D;64240 Len&#x3D;0</p>
+<p>​            MSS&#x3D;1460 WS&#x3D;256</p>
+<p>B - &gt;A [SYN, ACK] Seq&#x3D;0 Ack&#x3D;1 Win&#x3D;29200 Len&#x3D;0</p>
+<p>​            MSS&#x3D;1424 WS&#x3D;512</p>
+<p>A -&gt; B [ACK] Seq&#x3D;1 Ack&#x3D;1 Win&#x3D;132352 Len&#x3D;0</p>
+<p><strong>数据发送阶段</strong></p>
+<p>A -&gt; B [ACK] Seq&#x3D;1 Ack&#x3D;1 Win&#x3D;132352 Len&#x3D;1424</p>
+<p>A -&gt; B [ACK] Seq&#x3D;1425 Ack&#x3D;1 Win&#x3D;132352 Len&#x3D;1424</p>
+<p>A -&gt; B [PSH, ACK] Seq&#x3D;2849 Ack&#x3D;1 Win&#x3D;132352 Len&#x3D;1247</p>
+<p>B -&gt; A [ACK] Seq&#x3D;1 Ack&#x3D;1425 Win&#x3D;32256 Len&#x3D;0</p>
+<p>B -&gt; A [ACK] Seq&#x3D;1 Ack&#x3D;2849 Win&#x3D;35328 Len&#x3D;0</p>
+<p>B -&gt; A [ACK] Seq&#x3D;1 Ack&#x3D;4096 Win&#x3D;37888 Len&#x3D;0</p>
+<p>B -&gt; A [PSH, ACK] Seq&#x3D;1 Ack&#x3D;4096 Win&#x3D;37888 Len&#x3D;7</p>
+<p><strong>四次挥手阶段</strong></p>
+<p>B -&gt; A [FIN, ACK] Seq&#x3D;8 Ack&#x3D;4096 Win&#x3D;37888 Len&#x3D;0</p>
+<p>A -&gt; B [ACK] Seq&#x3D;4096 Ack&#x3D;9 Win&#x3D;132352 Len&#x3D;0</p>
+<p>A -&gt; B [FIN, ACK] Seq&#x3D;4096 Ack&#x3D;9 Win&#x3D;132352 Len&#x3D;0（下面少复制了一行ACK，抱歉）</p>
+<p>详细的抓包数据与分析整理，就不在文章里展示了。</p>
+<h2 id="3-文件系统"><a href="#3-文件系统" class="headerlink" title="3.文件系统"></a>3.文件系统</h2><p>原文链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/bYUGs-KBBzPafvZ7EbZJ1Q">https://mp.weixin.qq.com/s/bYUGs-KBBzPafvZ7EbZJ1Q</a></p>
+<p><strong>你手里有一块硬盘，大小为 1T</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfZqVQibyBs0wVPoFMcGCmqwVCiaBK4j30rciagooOJK38S0Gk3Tb2udw0g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p><strong>你还有一堆文件</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfDf52Y0RCfHGsgYDk3yP8RXAjlFgFaPwPyNPVqmiaxrCDY2y2hHDRuzQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>这些文件在硬盘看来，就是一堆二进制数据而已</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfmENc0IKA0Kd8ITOfDe5D0z3wlTsyvb0iamvbzjy3icUU5uKHPb8icklIg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>你准备把这些文件存储在硬盘上，并在需要的时候读取出来。</p>
+<p>要设计怎样的软件，才能更方便地在硬盘中读写这些文件呢？</p>
+<h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>首先我不想和复杂的扇区，设备驱动等细节打交道，因此我先实现了一个简单的功能，将硬盘按逻辑分成一个个的<strong>块</strong>，并可以以块为单位进行读写。</p>
+<p>每个块就定义为两个物理扇区的大小，即 1024 字节，就是 1KB 啦。</p>
+<p>硬盘太大不好分析，我们就假设你的硬盘只有 1MB，那么这块硬盘则有 1024 个块。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDf56b6Iia6zq3Yw6XeosYOV7Rds82Xn2sxuV75Iaib9Qb72yE30zNqXOicg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>OK，我们开始存文件啦！</p>
+<p>准备一个文件</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDftL60S3R7ftR7ygNTQOHRAmPayVlLj4At7uJKoAyu6icibxIXzIWAKsHg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>随便选个块放进去，3 号块吧！</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfkHibk00PpYTMhgbwniamDKiarXxAU0oibicgXTjeznytfHdJZJR7a2PTl2w/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>成功！首战告捷！</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>再存一个文件！</p>
+<p>诶？发现问题了，万一这个文件也存到了 3 号块，不是把原来的文件覆盖了么？不行，得有一个地方记录，现在可使用的块有哪些，像这样。</p>
+<p>块 0：未使用</p>
+<p>块 1：未使用</p>
+<p>块 2：未使用</p>
+<p>块 3：已使用</p>
+<p>块 4：未使用</p>
+<p>…</p>
+<p>块 1023：未使用</p>
+<p>那我们就用 0 号块，来记录所有块的使用情况吧！怎么记录呢？</p>
+<p><strong>位图！</strong></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_gif/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfRruNoC8sYKTcib1ibOYFzGlLtYBphS1U3fnavQY1vasqjw4EG6IkrGfQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="图片"></p>
+<p>那我们给块 0 起个名字，叫<strong>块位图</strong>，之后这个块 0 就专门用来记录所有块的使用情况，不再用来存具体文件了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfN7kfnVIs7NVmZVxcBoTyK2aoa24OOxu56VMDEYXpeibswiagvGMZqB7A/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>当我们再存入一个新文件时，只需要在块位图中找到第一个为 0 的位，就可以找到第一个还未被使用的块，将文件存入。同时，别忘了把块位图中的相应位置 1。</p>
+<p>完美！</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>下面，我们尝试读取刚刚的文件。</p>
+<p>咦？又遇到问题了，我怎么找到刚刚的文件呢？根据块号么？这也太蠢了，就像你去书店找书，店员让你提供书的编号，而不是书名，显然不合理。</p>
+<p>因此我们给每个文件起一个名字，叫<strong>文件名</strong>，通过它来寻找这个文件。</p>
+<p>那必然就要有一个地方，记录文件名与块号的对应关系，像这样。</p>
+<p>葵花宝典.txt：3 号块</p>
+<p>数学期末复习资料.mp4：5 号块</p>
+<p>低并发编程的秘密.pdf：10 号块</p>
+<p>…</p>
+<p>别急，既然都要选一个地方记录文件名称了，不妨多记录一点我们关心的信息吧，比如文件大小、文件创建时间、文件权限等。</p>
+<p>这些东西自然也要保存在硬盘上，我们选择用一个固定大小的空间，来表示这些信息，多大空间呢？128 字节吧。</p>
+<p>为啥是 128 字节呢？我乐意。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfUHOgLG93SuaRKVQx7KwvwEMkibXibUBiahk2zPGHxJEllw9yGIiaEHOZ7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>我们将这 128 字节的结构体，叫做一个 <strong>inode</strong>。</p>
+<p>之后，我们每存入一个新的文件，不但要占用一个块来存放这个文件本身，还要占用一个 inode 来存放文件的这些<strong>元信息</strong>，并且这个 inode 的<strong>所在块号</strong>这个字段，就指向这个文件所在的块号。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfXh1ic04TbyrJJ8tjpSWGDnsStYz6Diazzibg6keU2nJdODg5XAq6IZ8eQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>如果一个 inode 为 128 字节，那么一个块就可以容纳 8 个 inode，我们可以将这些 inode 编上号。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDf4yV2MR2qXibFaibLRaT23S0FicZyuFAbUtCQnylRic8KdQL6zS04KvzM2Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>如果你觉得 inode 数不够，也可以用两个或者多个块来存放 inode 信息，但这样用于存放数据的块就少了，这就看你自己的平衡了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDffrPoFxjuBZdpk3FFcrBricxWA8Iur8vSianfxgOFbVSxA1qjkMF9AugQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>同样，和块位图管理块的使用情况一样，我们也需要一个 <strong>inode 位图</strong>，来管理 inode 的使用情况。我们就把 inode 位图，放在 1 号块吧！</p>
+<p>同时，我们把 inode 信息，放在 2 号块，一共存 8 条 inode，这样我们的 2 号块就叫做 <strong>inode 表</strong>。</p>
+<p>现在，我们的文件系统结构，变成了下面这个样子。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDf7uy19fsibjjvkCBD82o2LzYoiaXMOUCoH5tswW0HVTAIxmdsbyH0oVDQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>注意：块位图是管理可用的块，每一位代表一个块的使用与否。inode 位图管理的是一条一条的 inode，并不是 inode 所占用的块，比如上图中有 8 条 inode，则 inode 位图中就有 8 位是管理他们的使用与否。</p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>现在，我们的文件很小，一个块就能容下。</p>
+<p>但如果需要两个块、三个块、四个块呢？</p>
+<p>很简单，我们只需要采用<strong>连续存储法</strong>，而 inode 则只记录文件的第一个块，以及后面还需要多少块，即可。</p>
+<p>这种办法的缺点就是：容易留下大大小小的<strong>空洞</strong>，新的文件到来以后，难以找到合适的空白块，空间会被浪费。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfdjiaibCH3Amv5m7eslaImM2Z1HgnobqPdicCdczx9yd01ZkkykHxiaB4ug/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>看来这种方式不行，那怎么办呢？</p>
+<p>既然在 inode 中记录了文件所在的块号，为什么不扩展一下，多记录几块呢？</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfUHOgLG93SuaRKVQx7KwvwEMkibXibUBiahk2zPGHxJEllw9yGIiaEHOZ7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>原来在 inode 中只记录了一个块号，现在扩展一下，记录 8 个块号！而且这些块<strong>不需要连续</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfkJRKnxe1tV7DsOYnibcqnx06huWZHgJZS8qG5kKG3UPOfAlvGF5oL1A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>嗯，这是个可行的办法！</p>
+<p>但是这也仅仅能表示 8 个块，能记录的最大文件是 8K（记住，一个块是 1K）, 现在的文件轻松就超过这个限制了，这怎么办？</p>
+<p>很简单，我们可以让其中一个块，作为<strong>间接索引</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDf78H2eJA2Hsib2kDzzibPdaM37BII5aJOkIbemBSWlfKL9VpaLmLemYkA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>这样瞬间就有 263 个块（多了 256 -1 个块）可用了，这种索引叫<strong>一级间接索引</strong>。</p>
+<p>如果还嫌不够，就再弄一个块做一级间接索引，或者做二级间接索引（二级间接索引则可以多出 256 * 256 - 1 个块）。</p>
+<p>我们的文件系统，暂且先只弄一个一级间接索引。硬盘一共才 1024 个块，一个文件 263 个块够大了。再大了不允许，就这么任性，爱用不用。</p>
+<p>好了，现在我们已经可以保存很大的文件了，并且可以通过文件名和文件大小，将它们准确读取出来啦！</p>
+<h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><p>但我们得精益求精，我们再想想看这个文件系统有什么毛病。</p>
+<p>比如，inode 数量不够时，我们是怎么得知的呢？是不是需要在 inode 位图中找，找不到了才知道不够用了？</p>
+<p>同样，对于块数量不够时，也是如此。</p>
+<p>要是有个全局的地方，来记录这一切，就好了，也方便随时调整，比如这样</p>
+<p>inode 数量</p>
+<p>空闲 inode 数量</p>
+<p>块数量</p>
+<p>空闲块数量</p>
+<p>那我们就再占用一个块来存储这些数据吧！由于他们看起来像是站在上帝视角来描述这个文件系统的，所以我们把它放在最开始的块上，并把它叫做<strong>超级块</strong>，现在的布局如下。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfc7McjdEjQfcUbDDxOzVw6ZDqLLrJDAsY8IgdXN5lmsodZ6aHCxpbjg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>我们继续精益求精。</p>
+<p>现在，<strong>块位图</strong>、<strong>inode 位图</strong>、<strong>inode 表</strong>，都是是固定地占据这块 1、块 2、块 3 这三个位置。</p>
+<p>假如之后 inode 的数量很多，使得 inode 表或者 inode 位图需要占据多个块，怎么办？</p>
+<p>或者，块的数量增多（硬盘本身大了，或者每个块变小了），块位图需要占据多个块，怎么办？</p>
+<p>程序是死的，你不告诉它哪个块表示什么，它可不会自己猜。</p>
+<p>很简单，与超级块记录信息一样，这些信息也选择一个块来记录，就不怕了。那我们就选择紧跟在超级块后面的 1 号块来记录这些信息吧，并把它称之为<strong>块描述符</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDffia4t0XszAj6icMpTAiaJY4d5cgN0Ka0DnULFZZZlCEdK3UmanFbqcSEA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>当然，这些所在块号只是记录起始块号，块位图、inode 位图、inode 表分别都可以占用多个块。</p>
+<p>好了，大功告成！</p>
+<h3 id="6"><a href="#6" class="headerlink" title="6"></a>6</h3><p>现在，我们再尝试存入一批文件。</p>
+<ul>
+<li>葵花宝典.txt</li>
+<li>数学期末复习资料.mp4</li>
+<li>赘婿1.mp4</li>
+<li>赘婿2.mp4</li>
+<li>赘婿3.mp4</li>
+<li>赘婿4.mp4</li>
+<li>低并发编程的秘密.pdf</li>
+</ul>
+<p>诶？这看着好不爽，所有的文件都是平铺开的，能不能拥有<strong>层级关系</strong>呢？比如这样</p>
+<ul>
+<li><p>葵花宝典.txt</p>
+</li>
+<li><p>数学期末复习资料.mp4</p>
+</li>
+<li><p>赘婿</p>
+</li>
+<li><ul>
+<li>赘婿1.mp4</li>
+<li>赘婿2.mp4</li>
+<li>赘婿3.mp4</li>
+<li>赘婿4.mp4</li>
+</ul>
+</li>
+<li><p>低并发编程的秘密.pdf</p>
+</li>
+</ul>
+<p>我们将葵花宝典.txt 这种称为<strong>普通文件</strong>，将赘婿这种称为<strong>目录文件</strong>，如果要访问赘婿1.mp4，那全文件名要写成</p>
+<p>赘婿&#x2F;赘婿1.mp4。</p>
+<p>如何做到这一点呢？那我们又得把 inode 结构拿出来说事了。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfUHOgLG93SuaRKVQx7KwvwEMkibXibUBiahk2zPGHxJEllw9yGIiaEHOZ7w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>此时需要一个属性来区分这个文件是普通文件，还是目录文件。</p>
+<p>缺什么就补什么嘛，我们已经很熟悉了，专门加一个 4 字节，来表示<strong>文件类型</strong>。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDf9C2jf6WySMyJTvESoChM9aOCWDibOys76I4hufo45zu0WPWWMnea0xw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>如果是<strong>普通文件</strong>，则这个 inode 所指向的数据块仍然和之前一样，就是文件本身原封不动的内容。</p>
+<p>但如果是<strong>目录文件</strong>，则这个 inode 所指向的数据块，就需要重新规划了。</p>
+<p>这个数据块里应该是什么样子呢？可以是一个一个指向不同 inode 的紧挨着的结构体，比如这样。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDf4ia6OOsneVH1xWqnibiboqPCbDvZetEmTJ15oRATib4NicpqHibhPPp83BMw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>这样先通过 <strong>赘婿</strong> 这个目录文件，找到所在的数据块。再根据这个数据块里的一个个带有 <strong>inode</strong> 信息的结构体，找到这个目录下的所有文件。</p>
+<p>完美！</p>
+<h3 id="7"><a href="#7" class="headerlink" title="7"></a>7</h3><p>不过这样的话，你想想看，如果想要查看一下赘婿<strong>这个目录下的所有文件</strong>（比如 ll 命令），将文件名和文件类型都展示出来，怎么办呢？</p>
+<p>就需要把一个个结构体指向的 inode 从 inode 表中取出，再把文件名和文件类型取出，这很是浪费时间。</p>
+<p>而让用户看到一个目录下的所有文件，又是一个极其常见的操作。</p>
+<p>所以，不如把文件名和文件类型这种常见的信息，放在数据块中的结构体里吧。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfaCmiaOAibU7q8kxf8CJdJRYYdqGdmnGAvb2pN5IhKENAON2GicIjAAAww/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>同时，inode 结构中的文件名，好像就没啥用了，这种变长的东西放在这种定长的结构中本身就很讨厌，早就想给它去掉了。而且还能给其他信息省下空间，比如文件所在块的数组，就能再多几个了。</p>
+<p>太好了，去掉它！</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfJSNp4Dxibd7IFba5DoicWdgkHiba1khAdAibwU1vmpDjN8ia3DS1ibwMklew/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>OK，大功告成，现在我们就可以给文件分门别类放进不同目录下了，还可以在目录下创建目录，无限套娃！</p>
+<h3 id="8"><a href="#8" class="headerlink" title="8"></a>8</h3><p>现在的文件系统，已经比较完善了，只是还有一点不太爽。</p>
+<p>我们访问到一个目录下，可以很舒服地看到目录里的文件，然后再根据名称访问这个目录下的文件或者目录，整个过程都是一个套路。</p>
+<p>但是，最上层的目录下的所有文件，即<strong>根目录</strong>，现在仍然需要通过遍历所有的 inode 来获得，能不能和上面的套路统一呢？</p>
+<p>答案非常简单，我们规定，<strong>inode 表中的 0 号 inode，就表示根目录</strong>，一切的访问，就从这个根目录开始！</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDf8t0qNVGLR6cKLv4SR0SGywsX1b5lPcu3AcGzUNjnCQ7V7QA7YE5IWg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>好了，这回没有然后了！</p>
+<p>我们最后来欣赏下我们的文件系统架构。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/GLeh42uInXRPpGdb1rLVOuU9fgMuLiaDfnk5ApwlxjBJSF2rSoxyhVFDcmktSrrah5Mj8iakhm4raOciaT4PLqQRg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>你是不是觉得这没啥了不起的。但这个破玩意，它就叫文件系统。</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E7%A1%AC%E6%A0%B8%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">http://example.com/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E7%A1%AC%E6%A0%B8%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">John Doe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">软件知识</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">硬件知识</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">
+                                    <span class="chip bg-color">计算机组成</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E6%90%9C%E7%B4%A2%E6%8A%80%E5%B7%A7/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="搜索技巧">
+                        
+                        <span class="card-title">搜索技巧</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-09-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">软件知识</span>
+                    </a>
+                    
+                    <a href="/tags/windows%E6%8A%80%E5%B7%A7/">
+                        <span class="chip bg-color">windows技巧</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%92%8C%E8%A3%85%E6%9C%BA%E7%9F%A5%E8%AF%86/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="计算机组成和装机知识">
+                        
+                        <span class="card-title">计算机组成和装机知识</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">软件知识</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%A3%85%E6%9C%BA%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">装机知识</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">硬件知识</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">
+                        <span class="chip bg-color">计算机组成</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2025</span>
+            
+            <a href="/about" target="_blank">John Doe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

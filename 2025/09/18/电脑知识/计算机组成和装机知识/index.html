@@ -1,0 +1,1468 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="计算机组成和装机知识, Hexo">
+    <meta name="description" content="计算机组成和装机知识0.计算机组成计算机组成包括控制器、运算器、存储器、输入设备、输出设备。
+当然这是比较官方学术的说法，不够感官化。
+白话一点就是：一个电脑分为硬件系统和软件系统两个组成部分。
+**硬件系统：**CPU、主板、存储器、机箱">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>计算机组成和装机知识 | Hexo</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+        <link rel="stylesheet" type="text/css" href="/css/reward.css">
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>Index</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>Tags</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>Categories</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>Archives</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>About</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>Contact</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>Friends</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="Search" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			Index
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			Tags
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			Categories
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			Archives
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			About
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			Friends
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">计算机组成和装机知识</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">软件知识</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%A3%85%E6%9C%BA%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">装机知识</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">硬件知识</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">
+                                <span class="chip bg-color">计算机组成</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                计算机
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    2025-09-18
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="计算机组成和装机知识"><a href="#计算机组成和装机知识" class="headerlink" title="计算机组成和装机知识"></a>计算机组成和装机知识</h2><h4 id="0-计算机组成"><a href="#0-计算机组成" class="headerlink" title="0.计算机组成"></a>0.计算机组成</h4><p>计算机组成包括<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%8E%A7%E5%88%B6%E5%99%A8/2206126?fromModule=lemma_inlink">控制器</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%BF%90%E7%AE%97%E5%99%A8/2667320?fromModule=lemma_inlink">运算器</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%AD%98%E5%82%A8%E5%99%A8/1583185?fromModule=lemma_inlink">存储器</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%BE%93%E5%85%A5%E8%AE%BE%E5%A4%87/10823368?fromModule=lemma_inlink">输入设备</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87/10823333?fromModule=lemma_inlink">输出设备</a>。</p>
+<p>当然这是比较官方学术的说法，不够感官化。</p>
+<p>白话一点就是：一个电脑分为<strong>硬件系统</strong>和<strong>软件系统</strong>两个组成部分。</p>
+<p>**硬件系统：**CPU、主板、存储器、机箱、电源、输入输出设备……</p>
+<p>**软件系统：**系统软件、应用软件</p>
+<p>一般电脑装机就是CPU（中央处理器）、GPU（显卡）、内存、主板、电源、显示器比较重要。</p>
+<p>然后是与之搭配的硬盘、散热、机箱、线材、鼠标键盘等等……</p>
+<p>最花钱的就是CPU和GPU。</p>
+<h4 id="1-中央处理器（CPU）"><a href="#1-中央处理器（CPU）" class="headerlink" title="1.中央处理器（CPU）"></a>1.中央处理器（CPU）</h4><p>CPU&#x3D;控制器+运算器。通俗点说法就是计算机大脑，外形就是个芯片。</p>
+<p>CPU最常见的两个厂家Intel和AMD。</p>
+<p>截止到今天（20240706）最常见的两个系列是：Intel 的酷睿 CORE 系列和 AMD 的锐龙 RYZEN 系列。</p>
+<p>CPU图示：</p>
+<p><img src="https://s2.loli.net/2024/07/06/5H2kyxZ3FUPIheS.jpg" alt="img"></p>
+<h5 id="1-1-Intel-的-CPU"><a href="#1-1-Intel-的-CPU" class="headerlink" title="1.1 Intel 的 CPU"></a>1.1 Intel 的 CPU</h5><p> 大致可分为 i3、i5、i7、i9 这四大型号，这四个型号中又分了许多的子型号，比如 i7 就有 12700F, 12700K, 12700KF 等。<img src="https://s2.loli.net/2024/07/06/oMgRnb6GqkPXl7S.jpg" alt="uisdc-hs-20220720-3"></p>
+<p>注意事项：</p>
+<ol>
+<li><p>同一代的i7基本上可以压着i5打，但是不同代的无法比较，例如12代的i5-12600K就强于11代的i9-11900K。</p>
+</li>
+<li><p>散片和盒装的区别：散片是直接提供给整机厂商的OEM版本，没包装，不带散热器。CPU本身和盒装CPU是一样的，散片没有质保，但是CPU故障率极低，还是可以买的。</p>
+</li>
+<li><p>散片不是二手CPU，盒装二手还是盒装。散片由于是代加工（OEM）版本，京东天猫买不到，只有淘宝店有。</p>
+</li>
+<li><p>想找当前的CPU可以搜CPU天梯图。时间限定在最近一个月即可。</p>
+</li>
+</ol>
+<h5 id="1-2-AMD的CPU"><a href="#1-2-AMD的CPU" class="headerlink" title="1.2 AMD的CPU"></a>1.2 AMD的CPU</h5><p>AMD 同样分为 R3、R5、R7、R9 这几个型号。</p>
+<p><img src="https://s2.loli.net/2024/07/06/W61jYtyMUGNn2Dl.jpg" alt="uisdc-hs-20220720-4"></p>
+<p>注意事项：</p>
+<ol>
+<li>intel单核频率会高一些，amd的多核处理会强一些。</li>
+<li>intel和amd的代数不能对比，厂家不同。可以看CPU天梯图</li>
+</ol>
+<h4 id="2-显卡（GPU）"><a href="#2-显卡（GPU）" class="headerlink" title="2.显卡（GPU）"></a>2.显卡（GPU）</h4><h5 id="2-1-显卡两大阵营"><a href="#2-1-显卡两大阵营" class="headerlink" title="2.1 显卡两大阵营"></a>2.1 显卡两大阵营</h5><p>显卡属于图形处理器。显卡分为集成显卡和独立显卡。集成显卡在中央处理器芯片中，也就是和CPU做到一起。独立显卡就是独立的，插在主板的PCIE扩展槽上。</p>
+<p>显卡分为N卡和A卡。也就是 NVDIA（英伟达）和 AMD 两大阵营。生产力的话例如AIGC还是N卡优势大。</p>
+<p><img src="https://s2.loli.net/2024/07/06/ydlnsWt8AqSXZ4g.jpg" alt="uisdc-sr-20231230-9"></p>
+<p>显卡图示：</p>
+<p><img src="https://s2.loli.net/2024/07/06/AUJK2WadBHTwotD.jpg" alt="uisdc-hs-20220720-5"></p>
+<h5 id="2-2-N卡的简单介绍"><a href="#2-2-N卡的简单介绍" class="headerlink" title="2.2 N卡的简单介绍"></a>2.2 N卡的简单介绍</h5><p>**N 卡作为现在的主流显卡，**是最为人们所推崇的，也是装机比例里面占比最多的显卡品牌，N 卡可以分为一下几个大的类别。</p>
+<ul>
+<li>Tegra —— 手机和嵌入式设备用的，了解即可</li>
+<li>GeForce —— 常规民用的显卡系列，打游戏工作都可兼顾，3060,3070等</li>
+<li>Quadro —— 专业绘图卡，常常配合专业软件使用，RTX6000，RTX8000等</li>
+<li>Tesla —— 大规模计算，比如深度学习训练，A100等</li>
+</ul>
+<p><img src="https://s2.loli.net/2024/07/06/wMB1J4PGpmVYThj.jpg" alt="1"></p>
+<p>注意事项：</p>
+<ol>
+<li>查看显卡天梯图</li>
+<li>购买渠道一般就是京东自营、淘宝、拼多多等还有线下实体店</li>
+<li>价格：京东自营≈天猫旗舰店＞实体店＞淘宝第三方≈拼多多</li>
+<li>售后：京东自营＞天猫旗舰店≈实体店≈淘宝第三方≈拼多多</li>
+<li>支持个人送保的品牌，其实在哪里入手都是可以的，售后方面用户可以和厂商直接对接。不支持个人送保的品牌，都建议是优先京东自营。</li>
+</ol>
+<h5 id="2-3显卡的品牌及版本号"><a href="#2-3显卡的品牌及版本号" class="headerlink" title="2.3显卡的品牌及版本号"></a>2.3显卡的品牌及版本号</h5><p>公版显卡：Nvidia 和 AMD 根据规范生产的显卡。</p>
+<p>非公版显卡：第三方品牌拿到Nvidia 和 AMD 的芯片和设计显卡，如七彩虹、蓝宝石、华硕……</p>
+<p><strong>N卡阵营：</strong></p>
+<p>一线品牌：华硕、微星、七彩虹（准一线）</p>
+<p>二三线品牌：索泰、影驰、映众、耕升、翔升、铭瑄、昂达、万丽、必恩威等</p>
+<p><strong>A卡阵营：</strong></p>
+<p>一线品牌：蓝宝石、华硕</p>
+<p>二三线品牌：微星、讯景、撼讯、华擎、盈通、速驹、瀚铠等</p>
+<p><img src="https://s2.loli.net/2024/07/06/yXEYSbOnhNi6CVz.jpg" alt="1"></p>
+<p>注意事项：</p>
+<ol>
+<li>同型号丐版、中端、次旗舰、旗舰的性能差距很小。主要差距在散热、外观上。</li>
+<li>丐版是性价比最高的选择。</li>
+<li>中低端显卡那个便宜买那个，没必要买旗舰型号，好看也看不见。</li>
+<li>现在时间是20240706，再次购买时需要查显卡天梯图。</li>
+</ol>
+<h4 id="3-硬盘（HDD和SSD）"><a href="#3-硬盘（HDD和SSD）" class="headerlink" title="3.硬盘（HDD和SSD）"></a>3.硬盘（HDD和SSD）</h4><h5 id="3-1硬盘类型"><a href="#3-1硬盘类型" class="headerlink" title="3.1硬盘类型"></a>3.1硬盘类型</h5><p>硬盘属于存储器。最重要的就是容量和读写速率。</p>
+<ol>
+<li>容量：B＜KB＜MB＜GB＜TB＜PB。B是byte，也就是最小的存储单位。1KB&#x3D;1024B，其他同理。</li>
+<li>读写速率：分为读取速率和写入速率，这是两个操作指标，速率并不统一。</li>
+<li>硬盘类型：机械硬盘HDD和固态硬盘SSD。</li>
+<li>机械硬盘：就是磁碟+磁头，容量大，便宜。</li>
+<li>固态硬盘：固态电子存储芯片阵列，读取块，贵。长时间断电可能会丢数据。</li>
+<li>硬盘的接口和协议也会影响传输速率。</li>
+</ol>
+<p><img src="https://image.uisdc.com/wp-content/uploads/2023/12/uisdc-sr-20231230-23.jpg" alt="img"></p>
+<h5 id="3-2硬盘购买"><a href="#3-2硬盘购买" class="headerlink" title="3.2硬盘购买"></a>3.2硬盘购买</h5><ol>
+<li>固态硬盘：速度快、无噪音、贵、长时间断电可能会丢数据。</li>
+<li>机械硬盘：价格便宜、容量大、安全性高，数据易恢复。</li>
+<li>机械硬盘品牌主要有三个：<strong>西数、希捷、东芝</strong>。</li>
+<li>挑选机械硬盘其实最主要的就是区分<strong>垂直盘（CMR）和叠瓦盘(SMR)</strong></li>
+<li>叠瓦盘就需要大的缓存。因此缓存也能简单的判断垂直盘和叠瓦盘，一个2、3T的硬盘配备256MB的缓存，那大概率就是叠瓦盘了。</li>
+<li>游戏盘、视频剪辑盘、组NAS等需要频繁读写的就不能用叠瓦盘了</li>
+<li>固态硬盘分嵌入式（焊死在主板上）、可拔插的sata接口硬盘、M.2接口硬盘。</li>
+</ol>
+<p><img src="https://image.uisdc.com/wp-content/uploads/2023/12/uisdc-sr-20231230-6.jpg" alt="img"></p>
+<h4 id="4-内存（memory）"><a href="#4-内存（memory）" class="headerlink" title="4.内存（memory）"></a>4.内存（memory）</h4><h5 id="4-1-内存简介"><a href="#4-1-内存简介" class="headerlink" title="4.1 内存简介"></a>4.1 内存简介</h5><p>内存属于存储器，是目前计算机用来存储当前运行程序和正在使用的数据的临时性存储设备。内存比从硬盘中读取速度快。但是但它的主要缺点是保存的数据是临时性的，需要供电才能维持，当断电核重启后即被清空需要重新进行写入。</p>
+<p>影响内存的参数主要有3个，容量、类型、频率。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>容量</td>
+<td>内存可以保存的临时数据容量，单位GB。</td>
+</tr>
+<tr>
+<td>类型</td>
+<td>内存模块的标准技术规格，包含 DDR3、DDR4、DDR5 等，会随着技术的发展持续迭代。</td>
+</tr>
+<tr>
+<td>频率</td>
+<td>表示内存的传输速率，以 MHz 为单位，通常内存介绍中标注的 2666、3200、4000 等指的就是内存的频率大小。频率越高越流畅</td>
+</tr>
+</tbody></table>
+<p>注意点：</p>
+<ol>
+<li>相同的内存条是可以叠加的，但是不能使用不同的类型。例如两个8G组成16G</li>
+<li>叠加过程不能使用不同的类型，且频率不会叠加，如果使用了不同频率的内存，则整体以最低的频率为准。</li>
+<li>两个8G比单一个16G效果好，因为是双通道。</li>
+<li>内存的频率越高，运行大型软件，多任务处理，高负载游戏越流畅。但是还受处理器（CPU和GPU）和主板的限制。有一些高频率内存主板不支持。</li>
+<li>内存都会标注频率，2666MHz、3200MHz、3600MHz、4800MHz、5600MHz、6000MHz等，根据需求选。（注：购买高频内存需要进bios开启xmp，不然D4默频2666MHz运行，D5默认4800MHz运行）</li>
+</ol>
+<h5 id="4-2-购买内存（202407）"><a href="#4-2-购买内存（202407）" class="headerlink" title="4.2 购买内存（202407）"></a>4.2 购买内存（202407）</h5><p><strong>品牌推荐</strong></p>
+<ul>
+<li><p>宏碁掠夺者、芝奇、威刚、金士顿、海盗船、英睿达、科赋、十铨、光威、阿斯加特、宇瞻等（排名不分先后，只要听过名字的品牌基本都能买）</p>
+</li>
+<li><p>想支持国产的话不看品牌，认准<strong>长鑫颗粒。</strong></p>
+</li>
+</ul>
+<p><strong>是否超频</strong></p>
+<ul>
+<li>超频党是选内存颗粒，不超频就是直接选频率。</li>
+<li>内存超频，主要是看内存的颗粒，颗粒决定了时序和频率，其实颗粒也决定内存的上限，所以内存品牌其实没颗粒重要。</li>
+<li>可以搜DDR4、DDR5内存颗粒天梯图</li>
+</ul>
+<h4 id="5-主板（-MainBoard"><a href="#5-主板（-MainBoard" class="headerlink" title="5.主板（ MainBoard)"></a>5.主板（ MainBoard)</h4><h5 id="5-1主板简介"><a href="#5-1主板简介" class="headerlink" title="5.1主板简介"></a>5.1主板简介</h5><p>主板 （MainBoard），是一个用于将 CPU、内存、硬盘、显卡这些独立硬件整合起来并实现正常运转的电路板，是让不同硬件发挥作用的基础平台。</p>
+<p><strong>主板&#x3D;I&#x2F;O总线+输入输出系统</strong>（I&#x2F;O设备：键盘、鼠标、扫描仪、显示器、数字化仪，读卡机、纸带等。）</p>
+<p>主要特征：主板的主要特征就是内部接口和外部接口。</p>
+<ul>
+<li>内部接口： CPU 内存、Sata、M.2、PCI-E、电源等</li>
+<li>外部接口：USB、网口、音频、集显视频等</li>
+</ul>
+<p>主板注意：</p>
+<ol>
+<li>主板对电脑的性能影响相对小，好主板与差主板的区别主要体现在用料做工、外观设计等</li>
+<li>主板可以根据选好的 CPU 来选择，需要注意是 AMD 以及 Intel 的接口是不一样的</li>
+<li>大板接口更多，扩张性好，尺寸大；小板尺寸小，接口也少</li>
+<li>主板供电（供电能满足CPU需求就不会对电脑性能有影响）</li>
+<li>主板不提供性能，花太多钱不划算。</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/07/09/gBvuTMop6xlAXfy.jpg" alt="主板"></p>
+<h5 id="5-2主板购买"><a href="#5-2主板购买" class="headerlink" title="5.2主板购买"></a>5.2主板购买</h5><p>主板的高中低端，主要由以下几个方面决定：</p>
+<ul>
+<li>接口数量和协议：越高级的主板包含的接口数量越多，协议类型也越先进</li>
+<li>制造的工艺：制作的工艺和用料都更好，有更长的寿命</li>
+<li>电源供应设计：可以提供更稳定的使用体验和超频的能力</li>
+<li>散热解决方案：可以降低元件温度提供更可靠的稳定性</li>
+<li>光效 RGB 控制：实现自定义的主板灯源、硬件灯源效果控制</li>
+<li>独立芯片组：更好的音频、网络、蓝牙芯片等</li>
+</ul>
+<p>主板的主流尺寸：</p>
+<ul>
+<li>ATX：305mm × 244mm（12 × 9.6 英寸），最常见的主板类型，尺寸较接口较多兼容性最好。</li>
+<li>MATX：244mm × 244mm（9.6 × 9.6 英寸），尺寸较小，适用于小型机箱，通常具备较好的兼容性。</li>
+<li>Mini-ITX：170mm × 170mm（6.7 × 6.7 英寸），主板非常小巧，适用于紧凑型机箱，兼容性较差。</li>
+</ul>
+<p>购买主要考虑什么</p>
+<ul>
+<li>主板供电（供电能满足CPU需求就不会对电脑性能有影响）</li>
+<li>拓展性（多内存&#x2F;显卡插槽、硬盘插槽、IO接口等）</li>
+<li>WIFI&#x2F;蓝牙功能（需要这两个功能主板需要选择带WIFI后缀的版本）</li>
+<li>双内存槽主板的内存超频能力强于四内存插槽主板，目前最强的（202407）超频主板Z790 APEX就是双槽主板。</li>
+</ul>
+<p>主板品牌</p>
+<ul>
+<li>主板品牌以御三家为首：华硕、微星、技嘉</li>
+<li>技嘉由于我没买就不骂了。</li>
+<li>二线的有：映泰、昂达、七彩虹、铭瑄、影驰</li>
+</ul>
+<h4 id="6-电源"><a href="#6-电源" class="headerlink" title="6.电源"></a>6.电源</h4><h5 id="6-1电源简介"><a href="#6-1电源简介" class="headerlink" title="6.1电源简介"></a>6.1电源简介</h5><p>为机箱中所有设备供电。电源主要就是额定功率、电压、80pilus、模块化</p>
+<table>
+<thead>
+<tr>
+<th>名词</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>额定功率</td>
+<td>1. 购买电源时商家所标注的额定功率，如 550W、650W、750W 等，指的是电源的最高输出功率，也就是去除电力转换损耗后，还能为设备输出最高这么大的功率。<br />2. 选择我们可以直接参考华硕官方给出的电源功率参考建议，华硕官方给出的参考功率是由很大冗余的。</td>
+</tr>
+<tr>
+<td>电压</td>
+<td>电脑内的各个部件通常工作在不同的电压下，电源需要将 220V 交流电转换为+3.3V、+5V、+12V 的直流电，所以电源所标明的电压就是它可以转换为的电压。</td>
+</tr>
+<tr>
+<td>80PLUS</td>
+<td>电源上有很多线材，有线材就有电阻，有电阻就有电损，有了电损就会有转换率，选择电源时我们会看到很多会标80Plus铜牌、80Plus金牌之类，这就是电源转换率的标准。一般选择80PLUS铜牌认证以上的电源就可以了，额定功率是指除去电损过之后的功率，不然就是虚标。</td>
+</tr>
+<tr>
+<td>模块化</td>
+<td>非模组、半模组、全模组，指的是电源输出的线是否可拆卸<br />非模组电源背部的连接线全部不可拆卸，用不到的只能卷在机箱内；<br />全模组则是全部可拆卸；<br />半模组是只有 CPU、主板、GPU 这些必要部件的电源线不可拆卸，其余可拆卸。</td>
+</tr>
+</tbody></table>
+<p><img src="https://s2.loli.net/2024/07/09/ToGYN5WfQ34us9I.jpg" alt="img"></p>
+<p>注意点：</p>
+<ol>
+<li>不管转换率如何都不会影响额定功率，一款 500W 的电源，不管是铜牌还是金牌，输出都是 500W。转换率影响的是输入功率，转换率低的电源需要从插座取更多的电才能提供 500W 输出，这种影响需要经年累月的使用才会在电费上体现出一定的差异。</li>
+<li>高转换率的电源优势：发热量小，电源静音。省电。</li>
+<li>额定功率大小不代表电源的品质。</li>
+<li>电源转换率不代表电源的品质。</li>
+<li>全模组、非模组不代表电源的品质。设计推荐全模组或半模组，不然强迫症犯了还得买。</li>
+<li>ATX 尺寸：标准的桌面计算机机箱电源尺寸</li>
+<li>SFX-L 尺寸：应用于较小的紧凑型机箱尺寸</li>
+<li>SFX 尺寸：是最小的尺寸，主要用于 ITX 或以下的机箱</li>
+</ol>
+<p><img src="https://s2.loli.net/2024/07/09/ZanqxpojNiLg6FJ.jpg" alt="img"></p>
+<h5 id="6-2电源购买"><a href="#6-2电源购买" class="headerlink" title="6.2电源购买"></a>6.2电源购买</h5><p>首选：海韵、安钛克、振华、全汉、台达、EVGA、酷冷至尊、长城</p>
+<p>次选：航嘉、鑫谷、先马</p>
+<p>品牌不是绝对的选择标准，每个品牌都有高中低端定位的产品，所以具体还要看型号。</p>
+<h4 id="7-散热"><a href="#7-散热" class="headerlink" title="7.散热"></a>7.散热</h4><h5 id="7-1散热简介"><a href="#7-1散热简介" class="headerlink" title="7.1散热简介"></a>7.1散热简介</h5><p>散热很重要，CPU、GPU 都是发热量巨大的元器件，其核心温度高者可达 90°C。大价钱来的不散热会烧坏的。</p>
+<table>
+<thead>
+<tr>
+<th>名词</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CPU 散热</td>
+<td>CPU 散热需要单独购买，专门为 CPU 进行散热。</td>
+</tr>
+<tr>
+<td>GPU 散热</td>
+<td>通常显卡会自带散热组件，包含 1-3 个风扇或水冷</td>
+</tr>
+<tr>
+<td>机箱散热</td>
+<td>由于机箱是一个密闭的空间，从 CPU、GPU 核心处散出来的热量容易堆积在机箱内形成温腔从而影响持续散热，所以需要将机箱内积压的热量导散到外部。</td>
+</tr>
+<tr>
+<td>主板散热</td>
+<td>主板的元器件、硬盘等等也会散发一定的热量，但量并不大，通常不需要专门针对主板购买独立的散热器件，主板自带则用，没有自带则不用。</td>
+</tr>
+<tr>
+<td>被动散热</td>
+<td>仅仅通过导热胶将器件的热量传导至表面的金属片上，依靠热量自身的散发降温</td>
+</tr>
+<tr>
+<td>主动散热</td>
+<td>除了利用硅胶将核心热量传导至金属散热鳍片之外，还依靠风扇主动引导热空气的流向。</td>
+</tr>
+</tbody></table>
+<p>散热最简单的方式就是风扇和水冷。</p>
+<p>用风扇就要考虑风道不同朝向的风扇明显会打架。</p>
+<p>所以风扇的宏观上需要保证一个原则：下进上出、前进后出。</p>
+<h5 id="7-2CPU散热"><a href="#7-2CPU散热" class="headerlink" title="7.2CPU散热"></a>7.2CPU散热</h5><p>CPU 的散热器有三种形式：下压散热、塔式散热和水冷散热。</p>
+<p>下压散热和塔式散热属于风冷，热量主要由金属和空气传导；</p>
+<p>水冷散热则使用了专门的水冷液，CPU 的热量由液体相变传导至鳍片处。</p>
+<p><img src="https://s2.loli.net/2024/07/09/XYEaAvB4e6nQdsT.jpg" alt="img"></p>
+<p>注意点：</p>
+<ul>
+<li><p>通常情况下 i5 或 i7 的用风冷散热器就够了，但 i9 的话风冷就不够了，用一体式水冷更好。</p>
+</li>
+<li><p>不考虑美观性风扇，感觉没啥用还光污染。</p>
+</li>
+<li><p>下压散热：常见于较低端散热器，下压散热的风扇朝着机箱侧面吹，由于散热面积不大，所以只会用在功耗比较低的 CPU 上。</p>
+</li>
+<li><p>塔式散热：鳍片和风扇立起来的风冷散热，风扇能够朝着前后吹，塔式散热散热面积较大，可以压功耗更高一些的 CPU。、</p>
+</li>
+<li><p>水冷散热：水冷散热的冷排——也就是风扇和鳍片——可以直接安装在机箱上，导流管会将在CPU核心处汽化的水冷液导流至冷排处进行液化。</p>
+</li>
+</ul>
+<h5 id="7-3风扇的购买"><a href="#7-3风扇的购买" class="headerlink" title="7.3风扇的购买"></a>7.3风扇的购买</h5><p>目前（202407）最好的还是猫扇。除了贵没啥毛病，不，贵是我的问题，猫扇没毛病。</p>
+<p>**高端：**猫头鹰NF-A12x25 300多一个</p>
+<p>**百元：**温柔台风、追风者T30、酷冷至尊漩涡</p>
+<p>**性价比：**利民（淘宝25<del>40）、先马冰风（28</del>40)</p>
+<p>**便宜：**ID-COOLING XF-12025-SD-K，这个才20</p>
+<h4 id="8-机箱"><a href="#8-机箱" class="headerlink" title="8.机箱"></a>8.机箱</h4><h5 id="8-1机箱简介"><a href="#8-1机箱简介" class="headerlink" title="8.1机箱简介"></a>8.1机箱简介</h5><p>机箱基本上就是装饰品。考虑省钱鞋盒都能用。主要考虑的就是尺寸、硬盘位置、风扇位、开关、I&#x2F;O接口等。</p>
+<p>机箱需要注意的硬件规格：</p>
+<ul>
+<li>散热器限高（风冷）</li>
+<li>风扇位（水冷规格）</li>
+<li>显卡尺寸（显卡长度）</li>
+<li>主板规格（ATX、MATX、ITX主板）</li>
+<li>电源规格（ATX、SFX电源）</li>
+<li>硬盘位（拓展性）</li>
+</ul>
+<h5 id="8-2-机箱购买"><a href="#8-2-机箱购买" class="headerlink" title="8.2 机箱购买"></a>8.2 机箱购买</h5><p>能装进去硬件就行，价格几十到几千不等。对性能无帮助，鞋盒都行。</p>
+<p>尺寸说明：</p>
+<table>
+<thead>
+<tr>
+<th>机箱类型</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ITX机箱</td>
+<td>体积小</td>
+<td>硬件局限性大，成本高</td>
+</tr>
+<tr>
+<td>MIni机箱</td>
+<td>体积相对较小</td>
+<td>风道一般，不支持ATX以上主板</td>
+</tr>
+<tr>
+<td>MAtx机箱</td>
+<td>紧凑型ATX机箱</td>
+<td>体型较大</td>
+</tr>
+<tr>
+<td>ATX机箱</td>
+<td>最常见，支持大部分主板显卡</td>
+<td>体型较大</td>
+</tr>
+<tr>
+<td>全塔机箱</td>
+<td>几乎所有配件</td>
+<td>造价高，体型大</td>
+</tr>
+<tr>
+<td>异型机箱</td>
+<td>好看</td>
+<td>造价高，扩展限制</td>
+</tr>
+</tbody></table>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        Author:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">John Doe</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        Link:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://example.com/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%92%8C%E8%A3%85%E6%9C%BA%E7%9F%A5%E8%AF%86/">http://example.com/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%92%8C%E8%A3%85%E6%9C%BA%E7%9F%A5%E8%AF%86/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        Reprint policy:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    All articles in this blog are used except for special statements
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    reprint policy. If reproduced, please indicate source
+                    <a href="/about" target="_blank">John Doe</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>Copied successfully, please follow the reprint policy of this article</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">more</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">软件知识</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%A3%85%E6%9C%BA%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">装机知识</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">硬件知识</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">
+                                    <span class="chip bg-color">计算机组成</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+            <div class="card">
+                <a href="/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E7%A1%AC%E6%A0%B8%E7%9A%84%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9F%A5%E8%AF%86/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="硬核的计算机知识">
+                        
+                        <span class="card-title">硬核的计算机知识</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-09-18
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="post-category">
+                                    计算机
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">软件知识</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%A1%AC%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">硬件知识</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/">
+                        <span class="chip bg-color">计算机组成</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2025/09/18/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/%E5%AE%9E%E7%94%A8%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="实用网站导航">
+                        
+                        <span class="card-title">实用网站导航</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-09-18
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/" class="post-category">
+                                    网站导航
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">软件知识</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%BD%91%E7%AB%99%E5%AF%BC%E8%88%AA/">
+                        <span class="chip bg-color">网站导航</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2025</span>
+            
+            <a href="/about" target="_blank">John Doe</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;Total visits:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;Total visitors:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1181062873@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;Search</span>
+            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
